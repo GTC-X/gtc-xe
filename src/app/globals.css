@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .max-width {
+    @apply max-w-[1380px] mx-auto px-3;
+  }
+  .container {
+    @apply max-w-[1380px] mx-auto px-3;
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  @apply text-primary;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.footer-img {
+  background-image: url("../../public/footer-curve.png");
+  background-size: 100% 100%;
+}
+
+.banner-img {
+  background-image: url("../../public/hero.png");
+  background-size: 100% 100%;
+}
+.solution-img {
+  background-image: url("../../public/solution.svg");
+  background-size: 40% 86%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.white-label-img {
+  background-image: url("../../public/white-label.png");
+  background-size: 100% 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form-img {
+  background-image: url("../../public/form-bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.inner-shadow-card {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
