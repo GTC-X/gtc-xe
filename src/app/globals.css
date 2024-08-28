@@ -28,7 +28,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: "Outfit", sans-serif;
   @apply text-primary;
 }
 
