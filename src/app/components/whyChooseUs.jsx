@@ -15,8 +15,8 @@ const WhyChooseUs = () => {
     // const [showForm, setShowForm] = useState(false)
     return (
         <div className="relative">
-            <div className="pt-10 flex gap-2 flex-col md:flex-row justify-between items-center bg-[#bbb4b424]">
-                <div className="max-w-3xl px-4 mx-auto col-span-2 text-center">
+            <div className="py-10 md:py-16 2xl:pt-20 flex gap-2 flex-col md:flex-row justify-between items-center bg-[#bbb4b424] pb-36">
+                <div className="max-w-4xl px-4 mx-auto col-span-2 text-center">
                     <h2 className="text-2xl">Why Choose Us?</h2>
                     <p className="text-xs mt-2">
                         At Premier Liquidity Services, we combine expertise, technology, and innovation to deliver unparalleled liquidity and trading<br />
@@ -30,7 +30,7 @@ const WhyChooseUs = () => {
                     </div>
                 </div>
                 {/* {showForm && */}
-                    <div className=" ease-in-out duration-1000 relative md:min-w-[570px] md:min-h-[570px]">
+                  {/* <div className=" ease-in-out duration-1000 relative md:min-w-[570px] md:min-h-[570px]">
                         <img className="md:block hidden absolute top-0 right-0" src="/form-bg.png" alt="" />
                         <div className="form-why-choose md:absolute relative md:w-[70%] w-full bg-success  md:bg-transparent md:left-[30%] px-6 py-10  text-white text-center">
                             <h2 className=" text-2xl font-medium">Contact Us</h2>
@@ -55,7 +55,7 @@ const WhyChooseUs = () => {
                                 </button>
                             </form>
                         </div>
-                    </div>
+                    </div> /*}
                 {/* } */}
                 {/* {!showForm &&
                     <div>

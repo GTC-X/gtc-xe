@@ -1,6 +1,6 @@
 const WhiteLabel = () => {
     return (
-        <div className="white-label-img">
+        <div className="white-label-img1">
             <div className="py-12 md:pb-36 pb-12 container">
                 <div className="max-w-7xl mx-auto text-center">
                     <h2 className="text-2xl">White Label Trading Platforms</h2>

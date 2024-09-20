@@ -1,31 +1,52 @@
-import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
-import { CiMail } from "react-icons/ci";
-import { PiMailbox } from "react-icons/pi";
-import { Divider } from "@nextui-org/react";
+import Link from 'next/link';
 
+const HeroSection = () => {
+  return (
+    <section 
+      className="relative bg-[#101d23] text-white" 
+    >
+      {/* Background Image Overlay */}
+      <div 
+        className="absolute inset-0 bg-[url(/banner/banner.webp)] bg-contain bg-bottom bg-no-repeat opacity-70 pointer-events-none" 
+      />
 
-const Banner = ({ title, desc }) => {
-    return (
-        <>
-            <div class=" relative banner-img pb-12" >
-                <img className=" absolute right-0" src="/banner.svg" alt="" />
-                <div className="container pt-32 pb-44 ">
-                    <div className="px-6">
-                        <h2 className=" text-4xl font-bold 6text-white"
-                            dangerouslySetInnerHTML={{ __html: title }}
-                        />
-                        <div className="text-xs mt-4 text-white"
-                            dangerouslySetInnerHTML={{ __html: desc }}
-                        />
-                        <button className="mt-3 shadow-large text-white bg-success py-2 px-6 rounded-[25px] text-xs font-bold">
-                            Learn More
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
+      {/* Content Section */}
+      <div className="container relative z-10 flex flex-col items-start justify-center h-[600px] md:h-[800px]">
+        {/* Left Text Section */}
+        <div className="w-full lg:w-[600px] text-center lg:text-left">
+          <h1 className="text-3xl md:text-[45px] font-bold mb-4 leading-tight">
+            PREMIER <br/> LIQUIDITY PROVIDER
+          </h1>
+          <div className='md:w-[450px]'>
+            <p className="text-md md:text-lg text-gray-300 flex flex-col md:flex-row justify-between">
+              <span>Deep Pool Of Liquidity</span>
+              <span>Competitive Spreads</span>
+            </p>
+            <p className="text-md md:text-lg text-gray-300 mb-5  flex flex-col md:flex-row justify-between">
+              <span>Advanced Technology</span>
+              <span>Global Reach</span>
+            </p>
+          </div>
+          <Link href="#" className="inline-block bg-[#65bc7b] text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-[#fff] hover:text-primary transition">
+            Learn More
+          </Link>
+        </div>
+      </div>
 
-export default Banner
+      {/* SVG Shape at the bottom */}
+      <div className="absolute bottom-0 w-full overflow-hidden leading-none">
+        <svg 
+          data-name="Layer 1" 
+          xmlns="http://www.w3.org/2000/svg" 
+          viewBox="0 0 1200 120" 
+          preserveAspectRatio="none"
+          className="w-full h-[180px] fill-current text-[#ffffff]"
+        >
+          <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" />
+        </svg>
+      </div>
+    </section>
+  );
+};
+
+export default HeroSection;

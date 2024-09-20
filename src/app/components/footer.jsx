@@ -3,13 +3,17 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { CiMail } from "react-icons/ci";
 import { PiMailbox } from "react-icons/pi";
 import { Divider } from "@nextui-org/react";
+import Image from "next/image";
 
 
 const Footer = () => {
     return (
         <>
             <div className="bg-[#bbb4b424] -mb-[185px] md:mb-0">
-                <img className="w-full h-52 md:h-auto" src="/footer-waves.png" alt="" />
+                <div className="relative w-full h-64 md:h-[550px] z-50">
+                    <Image src="/footer.svg" fill alt="bg" className=" object-cover" />
+                </div>
+               
             </div>
             <div class=" footer-img md:-mt-[152px] mt-0 pb-12" >
                 <div className="container">
@@ -108,7 +112,7 @@ const Footer = () => {
                 <p className="text-[18px] font-semibold text-[#011030]">Globally Trusted & Multi-Regulated Broker</p>
                 <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 mt-3">
                     <div>
-                        <img className="h-20" src="/sca.png" alt="" />
+                        <img className="h-20" src="/footer-country/lic1.svg" alt="" />
                     </div>
                     <div>
                         <img className="h-20" src="/fca.png" alt="" />

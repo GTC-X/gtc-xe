@@ -13,6 +13,8 @@ import WhyChooseUs from "./components/whyChooseUs";
 export default function Home() {
   const t = useTranslations("HomePage");
 
+  
+
   return (
     <div>
       <Banner
