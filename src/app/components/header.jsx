@@ -5,20 +5,24 @@ import { GoHome } from "react-icons/go";
 export default function App() {
 
     const navItems = [
-        { name: "", icon: <GoHome size={18} />, href: "#", active: true },
-        { name: "About Us", href: "#" },
-        { name: "Liquidity", href: "#" },
-        { name: "Inclusive Solutions", href: "#" },
-        { name: "Technology Solutions", href: "#" },
-        { name: "Liquidity Channels & Hubs", href: "#" },
-        { name: "White Label", href: "#" },
+        { name: "", icon: <GoHome size={18} />, href: "/", active: true },
+        { name: "About Us", href: "about-us" },
+        { name: "Liquidity", href: "liquidity" },
+        { name: "Inclusive Solutions", href: "inclusive-solutions" },
+        { name: "Technology Solutions", href: "technology-solutions" },
+        { name: "Liquidity Channels & Hubs", href: "liquidity-channels-hubs" },
+        { name: "White Label", href: "white-label" },
     ];
 
     return (
         <div className="bg-gradient-to-r from-[#000F2F] to-[#001C44]">
             <Navbar class="container" maxWidth="xl" position="static">
                 <NavbarBrand>
-                    <div className="py-2"><img className="h-5 md:h-10" src="/logo.png" alt="" /></div>
+                    <div className="py-2">
+                        <Link href="/">
+                        <img className="h-5 md:h-10" src="/logo.png" alt="" />
+                        </Link>
+                        </div>
                 </NavbarBrand>
                 <NavbarContent className="hidden md:flex gap-4 justify-between" justify="center">
                     {navItems.map((item, index) => (

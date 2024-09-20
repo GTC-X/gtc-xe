@@ -27,7 +27,7 @@ const HeroSection = () => {
               <span>Global Reach</span>
             </p>
           </div>
-          <Link href="#" className="inline-block bg-[#65bc7b] text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-[#fff] hover:text-primary transition">
+          <Link href="/liquidity" className="inline-block bg-[#65bc7b] text-white font-semibold py-3 px-8 rounded-full text-lg hover:bg-[#fff] hover:text-primary transition">
             Learn More
           </Link>
         </div>

@@ -3,7 +3,7 @@
 
 const Card = ({ icon, title, para }) => {
     return (
-        <div className="border border-[#0000000D] rounded-md p-3 pb-8"
+        <div className="border border-[#0000000D] rounded-md bg-gray-100 p-3 py-8"
             style={{ boxShadow: "10px 6px 7.5px 0px #0000001C" }}>
             <img className="mx-auto h-14" src={icon} alt="" />
             <h2 className="text-sm mt-2 font-bold">{title}</h2>
@@ -15,7 +15,7 @@ const WhyChooseUs = () => {
     // const [showForm, setShowForm] = useState(false)
     return (
         <div className="relative">
-            <div className="py-10 md:py-16 2xl:pt-20 flex gap-2 flex-col md:flex-row justify-between items-center bg-[#bbb4b424] pb-36">
+            <div className="py-10 md:py-16 2xl:pt-20 flex gap-2 flex-col md:flex-row justify-between items-center pb-36">
                 <div className="max-w-4xl px-4 mx-auto col-span-2 text-center">
                     <h2 className="text-2xl">Why Choose Us?</h2>
                     <p className="text-xs mt-2">

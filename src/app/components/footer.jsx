@@ -9,13 +9,8 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <>
-            <div className="bg-[#bbb4b424] -mb-[185px] md:mb-0">
-                <div className="relative w-full h-64 md:h-[550px] z-50">
-                    <Image src="/footer.svg" fill alt="bg" className=" object-cover" />
-                </div>
-               
-            </div>
-            <div class=" footer-img md:-mt-[152px] mt-0 pb-12" >
+      
+            <div class=" footer-img mt-0 pb-12" >
                 <div className="container">
                     <div className=" grid md:pt-[152px] pt-[230px] md:grid-cols-4 sm:grid-cols-2 grid-cols-1 py-6 gap-4 px-6">
                         <div className="md:col-span-2">
@@ -112,19 +107,19 @@ const Footer = () => {
                 <p className="text-[18px] font-semibold text-[#011030]">Globally Trusted & Multi-Regulated Broker</p>
                 <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 mt-3">
                     <div>
-                        <img className="h-20" src="/footer-country/lic1.svg" alt="" />
+                        <img className="h-16" src="/footer-country/lic1.svg" alt="" />
                     </div>
                     <div>
-                        <img className="h-20" src="/fca.png" alt="" />
+                        <img className="h-16" src="/footer-country/lic2.svg" alt="" />
                     </div>
                     <div>
-                        <img className="h-20" src="/asic.png" alt="" />
+                        <img className="h-16" src="/footer-country/lic3.svg" alt="" />
                     </div>
                     <div>
-                        <img className="h-20" src="/fcsm.png" alt="" />
+                        <img className="h-16" src="/footer-country/lic4.svg" alt="" />
                     </div>
                     <div>
-                        <img className="h-20" src="/vfsc.png" alt="" />
+                        <img className="h-16" src="/footer-country/lic5.svg" alt="" />
                     </div>
                 </div>
             </div>
