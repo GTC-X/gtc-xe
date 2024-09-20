@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useTranslations } from 'next-intl';
+import { useTranslations } from "next-intl";
 import { Button, ButtonGroup } from "@nextui-org/button";
 import Banner from "./components/banner";
 import Service from "./components/service";
@@ -10,13 +10,15 @@ import LiquidityPricing from "./components/liqudityPricing";
 import WhiteLabel from "./components/whiteLabel";
 import WhyChooseUs from "./components/whyChooseUs";
 
-
 export default function Home() {
-  const t = useTranslations('HomePage');
+  const t = useTranslations("HomePage");
 
   return (
     <div>
-      <Banner />
+      <Banner
+        title={`<p>PREMIER<br /> LIQUIDITY PROVIDER</p>`}
+        desc={`<p>  Deep Pool Of Liquidity <br /> Competitive Spreads</p>`}
+      />
       <Service />
       <Solution />
       <SuccessFullWork />
