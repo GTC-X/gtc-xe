@@ -4,7 +4,7 @@ import Link from 'next/link';
 const BannerSection = ({ title, subtitle, breadcrumbLink, breadcrumbText, imageUrl }) => {
   return (
     <section 
-      className="relative bg-cover bg-top-center bg-no-repeat text-white" 
+      className="relative md:bg-cover bg-top-center bg-no-repeat text-white" 
       style={{ backgroundImage: `url(${imageUrl})` }} // Background image from props
     >
       {/* Background Image Overlay */}
@@ -13,15 +13,15 @@ const BannerSection = ({ title, subtitle, breadcrumbLink, breadcrumbText, imageU
       />
 
       {/* Content Section */}
-      <div className="container relative z-10 flex flex-col items-start justify-center h-[600px] md:h-[900px]">
+      <div className="max-w-7xl mx-auto relative z-10 flex flex-col items-start justify-center h-[500px] md:h-[840px] px-5 md:px-0">
         {/* Left Text Section */}
         <div className="w-full lg:w-[700px] text-center lg:text-left">
-          <h1 className="text-3xl md:text-[45px] font-bold mb-4 leading-tight uppercase">
+          <h1 className="text-2xl md:text-[45px] font-bold mb-4 leading-tight uppercase">
             {title} {/* Title from props */}
           </h1>
           <p className="text-lg md:text-xl mb-6">{subtitle}</p> {/* Subtitle from props */}
        
-          <div className="flex items-center mb-5 text-white text-lg mt-4">
+          <div className="flex justify-center md:justify-start items-center mb-5 text-white text-lg mt-4">
             <Link href={breadcrumbLink} className="text-[#65BC7B]">
               Home
             </Link>

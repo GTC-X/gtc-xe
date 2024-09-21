@@ -12,7 +12,7 @@ import { GoHome } from "react-icons/go";
 const navigation = [
   { name: "", icon: <GoHome size={18} />, href: "/", id: "home" },
   { name: "About Us", href: "about-us", id: "about" },
-  { name: "Liquidity", href: "liquidity", id: "liquidity" },
+  { name: "Liquidity", href: "/why-gtc", id: "liquidity" },
   { name: "Inclusive Solutions", href: "inclusive-solutions", id: "inclusive" },
   { name: "Technology Solutions", href: "technology-solutions", id: "technology" },
   { name: "Liquidity Channels & Hubs", href: "liquidity-channels-hubs", id: "channels" },
@@ -104,7 +104,7 @@ const Header = () => {
           <DialogPanel className="fixed inset-y-0 left-0 z-50 w-[90%] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               {/* Mobile Menu Logo */}
-              <Link href="/">
+              <Link href="/" className="relative w-24 h-12">
                 <Image src="/logo.png" alt="Logo" fill className="object-contain" />
               </Link>
               {/* Close Button */}
