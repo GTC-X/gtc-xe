@@ -1,50 +1,152 @@
-import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Button, Popover, PopoverTrigger, PopoverContent } from "@nextui-org/react";
+"use client";
+
+import { useState, useEffect } from "react";
+import { Dialog, DialogPanel } from "@headlessui/react";
+import { FaBarsStaggered } from "react-icons/fa6";
+import { IoClose } from "react-icons/io5";
+import Image from "next/image";
+import Link from "next/link";
 import { GoHome } from "react-icons/go";
 
-export default function App() {
+// Navigation Links
+const navigation = [
+  { name: "", icon: <GoHome size={18} />, href: "/", id: "home" },
+  { name: "About Us", href: "about-us", id: "about" },
+  { name: "Liquidity", href: "liquidity", id: "liquidity" },
+  { name: "Inclusive Solutions", href: "inclusive-solutions", id: "inclusive" },
+  { name: "Technology Solutions", href: "technology-solutions", id: "technology" },
+  { name: "Liquidity Channels & Hubs", href: "liquidity-channels-hubs", id: "channels" },
+  { name: "White Label", href: "white-label", id: "whiteLabel" },
+];
 
-    const navItems = [
-        { name: "", icon: <GoHome size={18} />, href: "/", active: true },
-        { name: "About Us", href: "about-us" },
-        { name: "Liquidity", href: "liquidity" },
-        { name: "Inclusive Solutions", href: "inclusive-solutions" },
-        { name: "Technology Solutions", href: "technology-solutions" },
-        { name: "Liquidity Channels & Hubs", href: "liquidity-channels-hubs" },
-        { name: "White Label", href: "white-label" },
-    ];
+const Header = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [activeItem, setActiveItem] = useState("home"); // State to track active item
 
-    return (
-        <div className="bg-gradient-to-r from-[#000F2F] to-[#001C44]">
-            <Navbar class="container" maxWidth="xl" position="static">
-                <NavbarBrand>
-                    <div className="py-2">
-                        <Link href="/">
-                        <img className="h-5 md:h-10" src="/logo.png" alt="" />
-                        </Link>
-                        </div>
-                </NavbarBrand>
-                <NavbarContent className="hidden md:flex gap-4 justify-between" justify="center">
-                    {navItems.map((item, index) => (
-                        <NavbarItem
-                            key={index}
-                            className={`text-white py-2 px-2 ${item.active ? "border-b-2 border-[#65BC7B]" : ""}`}
-                        >
-                            {item.icon ? (
-                                <div className="flex items-center gap-1">
-                                    {item.icon}
-                                    <span className="text-base">{item.name}</span>
-                                </div>
-                            ) : (
-                                <Link href={item.href} className="text-white text-base hover:text-primary">
-                                    {item.name}
-                                </Link>
-                            )}
-                        </NavbarItem>
-                    ))}
-                </NavbarContent>
-             
-            </Navbar>
+  // Function to detect scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const handleNavigationClick = (id) => {
+    setActiveItem(id); // Set active item when a navigation item is clicked
+  };
+
+  return (
+    <header
+      className={`fixed inset-x-0 top-0 z-50 py-2 transition-all duration-300 ${
+        isScrolled ? "bg-gradient-to-r from-[#000F2F] to-[#001C44]" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
+      }`}
+    >
+      <div className="container flex flex-row items-center justify-between py-3">
+        {/* Logo */}
+        <Link href="/">
+          <img className="h-5 md:h-10" src="/logo.png" alt="Logo" />
+        </Link>
+
+        {/* Mobile menu button */}
+        <div className="flex lg:hidden">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(true)}
+            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
+          >
+            <span className="sr-only">Open main menu</span>
+            <FaBarsStaggered aria-hidden="true" className="h-6 w-6" />
+          </button>
         </div>
-    );
-}
+
+        {/* Desktop Navigation */}
+        <div className="hidden lg:flex lg:gap-x-8 items-center">
+          {navigation.map((item) => (
+            <div
+              key={item.id}
+              onClick={() => handleNavigationClick(item.id)} // Handle click for active state
+              className={`text-base cursor-pointer ${
+                activeItem === item.id
+                  ? "text-primary border-b-2 border-primary pb-2"
+                  : "text-white"
+              } hover:text-primary transition-all`}
+            >
+              {item.icon ? (
+                <Link href={item.href}>
+                  <div className="flex items-center gap-1">
+                    {item.icon}
+                    <span>{item.name}</span>
+                  </div>
+                </Link>
+              ) : (
+                <Link href={item.href}>
+                  {item.name}
+                </Link>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile Menu Dialog */}
+        <Dialog
+          as="div"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+          className="lg:hidden"
+        >
+          <div className="fixed inset-0 z-50" />
+          <DialogPanel className="fixed inset-y-0 left-0 z-50 w-[90%] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div className="flex items-center justify-between">
+              {/* Mobile Menu Logo */}
+              <Link href="/">
+                <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+              </Link>
+              {/* Close Button */}
+              <button
+                type="button"
+                onClick={() => setMobileMenuOpen(false)}
+                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+              >
+                <span className="sr-only">Close menu</span>
+                <IoClose aria-hidden="true" className="h-6 w-6" />
+              </button>
+            </div>
+
+            <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="space-y-2 py-6">
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.id}
+                      href={item.href}
+                      onClick={() => handleNavigationClick(item.id)}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+                <div className="py-6">
+                  <Link
+                    href="#"
+                    className="bg-gradient rounded-full py-3 px-5 text-white w-96"
+                  >
+                    Contact Us
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </DialogPanel>
+        </Dialog>
+      </div>
+    </header>
+  );
+};
+
+export default Header;

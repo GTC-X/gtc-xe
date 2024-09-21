@@ -25,6 +25,11 @@ module.exports = {
         sans: ['var(--font-outfit)'],
         kufi: ['var(--font-kufi)'],
       },
+      screens: {
+        '3xl': '1799px',
+        '4xl': '2199px',
+        '5xl': '2499px'
+      },
     },
   },
   darkMode: "class",

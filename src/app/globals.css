@@ -45,28 +45,28 @@ body {
   }
 }
 
+.Heading1 {
+  @apply text-4xl md:text-5xl font-bold leading-tight text-gray-800;
+}
+
+.Heading2 {
+  @apply text-xl md:text-2xl xl:text-[30px] 3xl:text-[35px] font-semibold leading-snug text-primary pb-3;
+}
+
+.Heading3 {
+  @apply text-2xl md:text-3xl font-semibold leading-snug text-gray-600;
+}
+
+.text {
+  @apply text-base md:text-lg leading-relaxed;
+}
+
 .footer-img {
   background-image: url("../../public/footer-curve.png");
   background-size: 100% 100%;
 }
 
-.banner-img {
-  background-image: url("../../public/homepage.png");
-  background-size: 100% 100%;
-}
-.solution-img {
-  background-image: url("../../public/solution.svg");
-  background-size: 40% 86%;
-  background-repeat: no-repeat;
-  background-position: bottom;
-}
 
-.white-label-img {
-  background-image: url("../../public/white-label.png");
-  background-size: 100% 80%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
 
 .form-img {
   background-image: url("../../public/form-bg.png");

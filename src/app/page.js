@@ -1,26 +1,19 @@
-import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Button, ButtonGroup } from "@nextui-org/button";
-import Banner from "./components/banner";
-import Service from "./components/service";
-import Solution from "./components/solution";
-import SuccessFullWork from "./components/successFullWork";
-import TechnologySolution from "./components/technologySolution";
-import LiquidityPricing from "./components/liqudityPricing";
-import WhiteLabel from "./components/whiteLabel";
-import WhyChooseUs from "./components/whyChooseUs";
+import HeroBanner from "./components/home/HeroBanner";
+import Service from "./components/home/service";
+import Solution from "./components/home/solution";
+import SuccessFullWork from "./components/home/successFullWork";
+import TechnologySolution from "./components/home/technologySolution";
+import LiquidityPricing from "./components/home/liqudityPricing";
+import WhiteLabel from "./components/home/whiteLabel";
+import WhyChooseUs from "./components/home/whyChooseUs";
 
 export default function Home() {
   const t = useTranslations("HomePage");
 
-  
-
   return (
-    <div>
-      <Banner
-        title={`<p>PREMIER<br /> LIQUIDITY PROVIDER</p>`}
-        desc={`<p>  Deep Pool Of Liquidity <br /> Competitive Spreads</p>`}
-      />
+    <>
+      <HeroBanner />
       <Service />
       <Solution />
       <SuccessFullWork />
@@ -28,6 +21,6 @@ export default function Home() {
       <LiquidityPricing />
       <WhiteLabel />
       <WhyChooseUs />
-    </div>
+    </>
   );
 }
