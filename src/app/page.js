@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
 import HeroBanner from "./components/home/HeroBanner";
-import Service from "./components/home/service";
+import Service from "./components/home/Service";
 import Solution from "./components/home/solution";
 import SuccessFullWork from "./components/home/successFullWork";
 import TechnologySolution from "./components/home/technologySolution";
