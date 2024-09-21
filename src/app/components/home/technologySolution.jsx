@@ -3,7 +3,7 @@ const TechnologySolution = () => {
     return (
         <div className="  ">
             <div className="md:py-12 py-4 container   max-w-7xl text-center">
-                <h2 className="HeadingH2">Technology Solutions</h2>
+                <h2 className="Heading2">Technology Solutions</h2>
                 <p className="text my-2">Empower your trading with our cutting-edge technology platforms designed <br/>
                 to optimize performance and manage risks.</p>
                 <div className="mt-10 grid md:grid-cols-5 grid-cols-2 text-center gap-8">

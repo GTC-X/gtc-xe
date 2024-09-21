@@ -3,14 +3,14 @@ import Image from "next/image"
 const SuccessFullWork = () => {
     return (
         <div className="py-10 container">
-            <div className="max-w-3xl mx-auto text-center">
+            <div className="max-w-5xl mx-auto text-center">
                 <div className="flex flex-row items-center justify-center gap-10">
-                    <div className="relative w-full h-64">
+                    <div className="relative w-full h-36 md:h-72">
                         <Image src="/home/number.webp" fill alt="" className=" object-contain"
  />                       
                     </div>
                     <div className=" text-left">
-                        <h2 className="text-success HeadingH2">Years of successful work</h2>
+                        <h2 className="text-success Heading2">Years of successful work</h2>
                         <p className="text mt-3">Since our establishment, we've firmly established our expertise in the trading arena.
                             Throughout our journey, we've been trailblazers in shaping the financial services industry,
                             consistently innovating exceptional products, services, and trading platforms that set new standards.

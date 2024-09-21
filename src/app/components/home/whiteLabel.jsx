@@ -3,7 +3,7 @@ const WhiteLabel = () => {
         <div className="white-label-img1">
             <div className="py-12 md:pb-36 pb-12 container">
                 <div className="max-w-7xl mx-auto text-center">
-                    <h2 className="HeadingH2">White Label Trading Platforms</h2>
+                    <h2 className="Heading2">White Label Trading Platforms</h2>
                     <p className="text mt-2 ">
                         Expand your business with our customizable white label solutions, allowing you to offer<br />
                         branded trading platforms to your clients.</p>

@@ -14,7 +14,7 @@ const Service = () => {
         <div className="container py-10">
             <div className="max-w-5xl mx-auto text-center">
                 <h2 className="Heading2">Our Services</h2>
-                <p className="text mt-2">We offer a broad range of liquidity services across various asset classes to ensure optimal
+                <p className="text mt-2 max-w-2xl mx-auto">We offer a broad range of liquidity services across various asset classes to ensure optimal
                     trading conditions and market depth.</p>
                 <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-6">
                     <Card icon="/home/icons/icon1.svg" title="Forex" para="Access deep pools of liquidity in major and minor currency pairs." />

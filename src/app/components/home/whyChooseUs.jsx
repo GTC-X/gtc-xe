@@ -17,7 +17,7 @@ const WhyChooseUs = () => {
         <div className="relative">
             <div className="py-10 md:py-16 2xl:pt-20 flex gap-2 flex-col md:flex-row justify-between items-center pb-36">
                 <div className="max-w-4xl px-4 mx-auto col-span-2 text-center">
-                    <h2 className="HeadingH2">Why Choose Us?</h2>
+                    <h2 className="Heading2">Why Choose Us?</h2>
                     <p className="text mt-2">
                         At Premier Liquidity Services, we combine expertise, technology, and innovation to deliver unparalleled liquidity and trading
                         solutions. Our commitment to excellence ensures that you have the tools and support needed to thrive in the financial markets.
