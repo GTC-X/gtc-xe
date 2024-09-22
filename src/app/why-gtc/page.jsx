@@ -10,7 +10,7 @@ a premier provider of financial solutions."
         subtitle=""
         breadcrumbLink="/"
         breadcrumbText="Why GTC"
-        imageUrl="/why/why.svg"
+        imageUrl="/why/why.webp"
       />
       <WhyCard />
     </>

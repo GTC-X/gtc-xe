@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-const BannerSection = ({ title, subtitle, breadcrumbLink, breadcrumbText, imageUrl }) => {
+const BannerSection = ({ title, subtitle, breadcrumbLink, breadcrumbText, imageUrl, svgColor = '#ffffff' }) => {
   return (
     <section 
       className="relative md:bg-cover bg-top-center bg-no-repeat text-white" 
@@ -9,7 +9,7 @@ const BannerSection = ({ title, subtitle, breadcrumbLink, breadcrumbText, imageU
     >
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-black bg-contain bg-bottom bg-no-repeat opacity-50 pointer-events-none" 
+        className="absolute inset-0 bg-black bg-contain bg-bottom bg-no-repeat opacity-30 pointer-events-none" 
       />
 
       {/* Content Section */}
@@ -38,9 +38,12 @@ const BannerSection = ({ title, subtitle, breadcrumbLink, breadcrumbText, imageU
           xmlns="http://www.w3.org/2000/svg" 
           viewBox="0 0 1200 120" 
           preserveAspectRatio="none"
-          className="w-full h-[180px] fill-current text-[#ffffff]"
+          className="w-full h-[180px]"
         >
-          <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" />
+          <path 
+            d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" 
+            fill={svgColor} // Use the svgColor prop here
+          />
         </svg>
       </div>
     </section>

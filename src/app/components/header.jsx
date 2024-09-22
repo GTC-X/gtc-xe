@@ -13,8 +13,8 @@ const navigation = [
   { name: "", icon: <GoHome size={18} />, href: "/", id: "home" },
   { name: "About Us", href: "about-us", id: "about" },
   { name: "Liquidity", href: "/why-gtc", id: "liquidity" },
-  { name: "Inclusive Solutions", href: "inclusive-solutions", id: "inclusive" },
-  { name: "Technology Solutions", href: "technology-solutions", id: "technology" },
+  { name: "Inclusive Solutions", href: "/our-services", id: "inclusive" },
+  { name: "Technology Solutions", href: "/bridge", id: "technology" },
   { name: "Liquidity Channels & Hubs", href: "liquidity-channels-hubs", id: "channels" },
   { name: "White Label", href: "white-label", id: "whiteLabel" },
 ];

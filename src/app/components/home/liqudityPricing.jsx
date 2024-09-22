@@ -11,7 +11,7 @@ const LiquidityPricing = () => {
                 <div className=" grid md:grid-cols-2 grid-cols-1 items-center md:gap-2 gap-6">
                     <div>
                         <h2 className="text-2xl text-success">Liquidity Pricing Channels and Hubs</h2>
-                        <p className="text-xs mt-2 text-white">
+                        <p className="text mt-2 text-white">
                             Maximize your trading efficiency with our advanced pricing<br />
                             channels and hubs, designed to provide optimal pricing and execution.</p>
                         <div className=" grid grid-cols-2 gap-4 mt-10">

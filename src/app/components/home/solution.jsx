@@ -35,7 +35,7 @@ const solutions = [
     <div className="text-center md:text-left">
       <img className="h-10 mx-auto md:mx-0" src={imgSrc} alt={imgAlt} />
       <h3 className="text-white font-bold mt-4 md:mt-8">{title}</h3>
-      <p className="text-white text-xs mt-2 md:mt-4">{description}</p>
+      <p className="text-white text-sm mt-2 md:mt-4">{description}</p>
     </div>
   );
   
@@ -43,8 +43,8 @@ const solutions = [
     return (
       <section className="bg-gradient-to-r from-[#0C2951] to-[#0C122A]">
         <div className="container py-12 text-center max-w-7xl">
-          <h2 className="text-2xl text-white">All-Inclusive Solutions</h2>
-          <p className="text-xs mt-2 text-white">
+          <h2 className="Heading2 text-white">All-Inclusive Solutions</h2>
+          <p className="text mt-2 text-white">
             We provide end-to-end solutions to streamline your trading operations and enhance efficiency.
           </p>
           <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8">

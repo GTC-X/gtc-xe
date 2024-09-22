@@ -11,7 +11,7 @@ const page = () => {
         subtitle=""
         breadcrumbLink="/"
         breadcrumbText="About Us"
-        imageUrl="/about/about-banner.svg"
+        imageUrl="/about/about.webp"
       />
       <AboutUsSection />
       <MissionVision />

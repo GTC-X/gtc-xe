@@ -10,30 +10,30 @@ const TechnologySolution = () => {
                     <div>
                         <img className=" h-10 mx-auto" src="/pamm.svg" alt="" />
                         <h3 className=" font-bold mt-8">PAMM</h3>
-                        <p className=" mt-4 text-xs"> Utilize our Percent Allocation Management Module for efficient account management.</p>
+                        <p className=" mt-4 text-sm"> Utilize our Percent Allocation Management Module for efficient account management.</p>
                     </div>
                     <div>
                         <img className=" h-10 mx-auto" src="/mamm.svg" alt="" />
                         <h3 className=" font-bold mt-8">MAM</h3>
-                        <p className=" mt-4 text-xs">
+                        <p className=" mt-4 text-sm">
                         Leverage Multi-Account Manager 
                         tools for enhanced trading operations.</p>
                     </div>
                     <div>
                         <img className=" h-10 mx-auto" src="/copy-trading.svg" alt="" />
                         <h3 className=" font-bold mt-8">COPY TRADING</h3>
-                        <p className=" mt-4 text-xs">Enable seamless copying of successful trading strategies</p>
+                        <p className=" mt-4 text-sm">Enable seamless copying of successful trading strategies</p>
                     </div>
                     <div>
                         <img className=" h-10 mx-auto" src="/prop-trading.svg" alt="" />
                         <h3 className=" font-bold mt-8">PROP TRADING</h3>
-                        <p className=" mt-4 text-xs">Access advanced solutions for
+                        <p className=" mt-4 text-sm">Access advanced solutions for
                         proprietary trading.</p>
                     </div>
                     <div>
                         <img className=" h-10 mx-auto" src="/vips.svg" alt="" />
                         <h3 className=" font-bold mt-8">VPS</h3>
-                        <p className=" mt-4 text-xs">Enhance your trading 
+                        <p className=" mt-4 text-sm">Enhance your trading 
                         speed and reliability with our Virtual Private Server hosting.</p>
                     </div>
                 </div>

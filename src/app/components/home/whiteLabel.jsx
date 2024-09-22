@@ -10,7 +10,7 @@ const WhiteLabel = () => {
                     <div className="bg-[#5E849F] inner-shadow-card p-6 grid md:grid-cols-4 gap-4 grid-cols-1 mt-16 min-h-28 rounded-md">
                         <div>
                             <h2 className=" text-white text-xl font-semibold">cTrader White Label</h2>
-                            <p className="text-xs mt-3 text-white ">
+                            <p className="text-sm mt-3 text-white ">
                                 Provide an intuitive and powerful<br/>
                                 trading experience with cTrader.</p>
                             <img className="mt-3 mx-auto" src="trader-logo.svg" alt="" />
@@ -20,7 +20,7 @@ const WhiteLabel = () => {
                         </div>
                         <div>
                             <h2 className=" text-white text-xl font-semibold">Custom Trading Solutions </h2>
-                            <p className="text-xs mt-3 text-white ">
+                            <p className="text-sm mt-3 text-white ">
                             Tailor trading platforms to meet<br/>
                             your specific business needs.</p>
                          </div>
