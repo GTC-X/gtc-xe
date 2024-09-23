@@ -4,13 +4,13 @@ const services = [
   {
     title: "EXPERTISE",
     description:
-      "With years of experience in the financial markets, GTC XE is a trusted provider of bridge solutions. Our team of experts is committed to delivering reliable and efficient connectivity solutions to our clients.",
+      "With years of experience in the financial markets, Max Tech is a trusted provider of bridge solutions. Our team of experts is committed to delivering reliable and efficient connectivity solutions to our clients.",
     icon: "/home/icons/icon1.svg", // replace with actual icon path
   },
   {
     title: "GLOBAL CONNECTIVITY",
     description:
-      "GTC XE bridges offer global connectivity, allowing traders to access liquidity from markets around the world. Whether you're trading forex, stocks, commodities, or cryptocurrencies, our bridges can connect you to the markets you need.",
+      "Max Tech bridges offer global connectivity, allowing traders to access liquidity from markets around the world. Whether you're trading forex, stocks, commodities, or cryptocurrencies, our bridges can connect you to the markets you need.",
     icon: "/home/icons/icon2.svg",
   },
   {
@@ -28,7 +28,7 @@ const services = [
   {
     title: "EXPERIENCE",
     description:
-      "Seamless connectivity with GTC XE bridges and unlock new opportunities in your trading journey. Contact us today to learn more about our bridge solutions and how they can benefit your trading operations.",
+      "Seamless connectivity with Max Tech bridges and unlock new opportunities in your trading journey. Contact us today to learn more about our bridge solutions and how they can benefit your trading operations.",
     icon: "/home/icons/icon6.svg",
   },
 ];
@@ -38,7 +38,7 @@ const WhyChooseUs = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto">
         <h2 className="text-center text-2xl md:text-3xl font-bold mb-8 text-black">
-          WHY CHOOSE <span className="text-primary">GTC XE</span> BRIDGES?
+          WHY CHOOSE <span className="text-primary">Max Tech</span> BRIDGES?
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">

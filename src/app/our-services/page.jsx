@@ -7,7 +7,7 @@ const page = () => {
         {
           title: "Liquidity Solutions",
           description:
-            "At GTC XE, we specialize in providing top-tier liquidity solutions to financial institutions and institutional clients worldwide. Our deep pool of liquidity and advanced technology ensure optimal execution and minimal slippage on every trade.",
+            "At Max Tech, we specialize in providing top-tier liquidity solutions to financial institutions and institutional clients worldwide. Our deep pool of liquidity and advanced technology ensure optimal execution and minimal slippage on every trade.",
         },
         {
           title: "Trading Platforms",

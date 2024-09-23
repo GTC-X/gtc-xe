@@ -6,10 +6,10 @@ const ServicesSection = ({ services }) => {
     <section className="py-12 lg:py-14 3xl:py-20 bg-white">
       <div className="max-w-7xl mx-auto text-center mb-10">
         <h2 className="Heading2">
-          GTC XE SERVICES
+          Max Tech SERVICES
         </h2>
         <p className="text max-w-5xl mx-auto">
-          GTC XE is your premier destination for cutting-edge financial services
+          Max Tech is your premier destination for cutting-edge financial services
           and solutions. With a commitment to excellence and a focus on
           innovation, we offer a comprehensive range of services designed to
           meet the diverse needs of our clients in the ever-evolving financial

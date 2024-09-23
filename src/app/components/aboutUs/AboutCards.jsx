@@ -24,7 +24,7 @@ const AboutUsSection = () => {
     {
       title: 'PROFESSIONAL',
       description:
-        'At GTC XE, we take delight in our position as a leading global provider of liquidity solutions for financial services and institutional clients. With over a decade of experience and a strong commitment to excellence, we have solidified our position as a trusted provider of premium financial services. Since our establishment in 2012, we have been a cornerstone in the financial industry. our wide array of services and products reflects our financial strength and our unwavering dedication to meeting the evolving needs of our vast client base. Serving customers and partners across 100 countries worldwide, we are dedicated to serving a diverse range of clients.',
+        'At Max Tech, we take delight in our position as a leading global provider of liquidity solutions for financial services and institutional clients. With over a decade of experience and a strong commitment to excellence, we have solidified our position as a trusted provider of premium financial services. Since our establishment in 2012, we have been a cornerstone in the financial industry. our wide array of services and products reflects our financial strength and our unwavering dedication to meeting the evolving needs of our vast client base. Serving customers and partners across 100 countries worldwide, we are dedicated to serving a diverse range of clients.',
       icon: '/about/icon1.svg',
       active: false,
     },

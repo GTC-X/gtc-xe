@@ -50,7 +50,7 @@ const Header = () => {
       <div className="container flex flex-row items-center justify-between py-3">
         {/* Logo */}
         <Link href="/">
-          <img className="h-5 md:h-12" src="/logo.webp" alt="Logo" />
+          <img className="h-5 md:h-12" src="/clogo.png" alt="Logo" />
         </Link>
 
         {/* Mobile menu button */}
@@ -105,7 +105,7 @@ const Header = () => {
             <div className="flex items-center justify-between">
               {/* Mobile Menu Logo */}
               <Link href="/" className="relative w-24 h-12">
-                <Image src="/logo.png" alt="Logo" fill className="object-contain" />
+                <Image src="/clogo.png" alt="Logo" fill className="object-contain" />
               </Link>
               {/* Close Button */}
               <button

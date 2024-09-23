@@ -16,7 +16,7 @@ const services = [
   {
     title: "Best Liquidity",
     description:
-      "GTC XE is renowned for offering the best liquidity solutions in the market, ensuring that our clients have access to ample liquidity to execute their trades efficiently and seamlessly.",
+      "Max Tech is renowned for offering the best liquidity solutions in the market, ensuring that our clients have access to ample liquidity to execute their trades efficiently and seamlessly.",
     icon: "/why/icon/icon3.svg",
   },
   {

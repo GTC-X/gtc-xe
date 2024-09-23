@@ -11,7 +11,7 @@ const page = () => {
     <>
     <BannerSection
         title="Connecting Markets
-with GTC XE Bridges
+with Max Tech Bridges
 "
         subtitle=""
         breadcrumbLink="/"

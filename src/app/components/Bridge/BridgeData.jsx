@@ -7,7 +7,7 @@ const bridgeData = [
   },
   {
     title: "Optimized Performance",
-    description: "GTC XE bridges are optimized for performance, ensuring fast and reliable order execution. With minimal latency, traders can capitalize on market opportunities with precision and efficiency."
+    description: "Max Tech bridges are optimized for performance, ensuring fast and reliable order execution. With minimal latency, traders can capitalize on market opportunities with precision and efficiency."
   },
   {
     title: "Tailored Solutions",
