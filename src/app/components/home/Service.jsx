@@ -32,7 +32,7 @@ const Service = () => {
                     </div>
                     <div className=" text-left">
                         <div className="flex gap-2 items-center">
-                            <p className="text">Why GTC XE? </p>
+                            <p className="text">Why Max Tech? </p> 
                             <div className=" w-10 h-[1px] bg-success"></div>
                         </div>
                         <h2 className="Heading2">Your trusted Partner in Financial Markets</h2>
