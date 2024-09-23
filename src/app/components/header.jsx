@@ -44,13 +44,13 @@ const Header = () => {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 py-2 transition-all duration-300 ${
-        isScrolled ? "bg-gradient-to-r from-[#000F2F] to-[#001C44]" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
+        isScrolled ? "bg-black" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
       }`}
     >
       <div className="container flex flex-row items-center justify-between py-3">
         {/* Logo */}
         <Link href="/">
-          <img className="h-5 md:h-10" src="/logo.png" alt="Logo" />
+          <img className="h-5 md:h-12" src="/logo.webp" alt="Logo" />
         </Link>
 
         {/* Mobile menu button */}
@@ -60,7 +60,7 @@ const Header = () => {
             onClick={() => setMobileMenuOpen(true)}
             className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
           >
-            <span className="sr-only">Open main menu</span>
+            <span className="sr-only">Open main menu </span>
             <FaBarsStaggered aria-hidden="true" className="h-6 w-6" />
           </button>
         </div>
