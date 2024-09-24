@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 py-2 transition-all duration-300 ${
-        isScrolled ? "bg-black" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
+        isScrolled ? "bg-gradient-to-r from-[#244f62] to-[#181818]" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
       }`}
     >
       <div className="container flex flex-row items-center justify-between py-3">

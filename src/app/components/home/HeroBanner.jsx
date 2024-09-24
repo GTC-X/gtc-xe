@@ -3,7 +3,7 @@ import Link from 'next/link';
 const HeroBanner = () => {
   return (
     <section 
-      className="relative bg-[#101d23] text-white" 
+      className="relative bg-gradient-to-r from-[#244f62] to-[#181818] text-white" 
     >
       {/* Background Image Overlay */}
       <div 
