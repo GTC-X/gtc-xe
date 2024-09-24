@@ -7,7 +7,7 @@ const HeroBanner = () => {
     >
       {/* Background Image Overlay */}
       <div 
-        className="absolute inset-0 bg-[url(/banner/banner.webp)] bg-contain bg-bottom bg-no-repeat opacity-70 pointer-events-none" 
+        className="absolute inset-0 bg-[url(/home/eye-tech.webp)] bg-contain bg-bottom bg-no-repeat opacity-30 pointer-events-none" 
       />
 
       {/* Content Section */}
