@@ -6,17 +6,14 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
-import { GoHome } from "react-icons/go";
 
 // Navigation Links
 const navigation = [
-  { name: "", icon: <GoHome size={18} />, href: "/", id: "home" },
-  { name: "About Us", href: "about-us", id: "about" },
-  { name: "Liquidity", href: "/why-gtc", id: "liquidity" },
-  { name: "Inclusive Solutions", href: "/our-services", id: "inclusive" },
-  { name: "Technology Solutions", href: "/bridge", id: "technology" },
-  { name: "Liquidity Channels & Hubs", href: "liquidity-channels-hubs", id: "channels" },
-  { name: "White Label", href: "white-label", id: "whiteLabel" },
+  { name: "Home", href: "/", id: "home" },
+  { name: "About Us", href: "/", id: "about" },
+  { name: "Trading", href: "/", id: "liquidity" },
+  { name: "Open Live Account", href: "/", id: "inclusive" },
+  { name: "MT4 / MT5 Trading Platform", href: "/", id: "technology" },
 ];
 
 const Header = () => {
@@ -43,14 +40,13 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed inset-x-0 top-0 z-50 py-2 transition-all duration-300 ${
-        isScrolled ? "bg-gradient-to-r from-[#244f62] to-[#181818]" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
-      }`}
+      className={`fixed inset-x-0 top-0 z-50 py-2 bg-black transition-all duration-300 ${isScrolled ? " bg-black" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
+        }`}
     >
       <div className="container flex flex-row items-center justify-between py-3">
         {/* Logo */}
         <Link href="/">
-          <img className="h-5 md:h-12" src="/clogo.png" alt="Logo" />
+          <img className="h-5 md:h-12" src="/logo-new.png" alt="Logo" />
         </Link>
 
         {/* Mobile menu button */}
@@ -71,11 +67,10 @@ const Header = () => {
             <div
               key={item.id}
               onClick={() => handleNavigationClick(item.id)} // Handle click for active state
-              className={`text-base cursor-pointer ${
-                activeItem === item.id
-                  ? "text-primary border-b-2 border-primary pb-2"
+              className={`text-base cursor-pointer ${activeItem === item.id
+                  ? "text-white border-b-2 border-secondary pb-2"
                   : "text-white"
-              } hover:text-primary transition-all`}
+                } hover:text-white transition-all`}
             >
               {item.icon ? (
                 <Link href={item.href}>

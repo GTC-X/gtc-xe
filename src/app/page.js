@@ -4,9 +4,6 @@ import Service from "./components/home/Service";
 import Solution from "./components/home/solution";
 import SuccessFullWork from "./components/home/successFullWork";
 import TechnologySolution from "./components/home/technologySolution";
-import LiquidityPricing from "./components/home/liqudityPricing";
-import WhiteLabel from "./components/home/whiteLabel";
-import WhyChooseUs from "./components/home/whyChooseUs";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -14,13 +11,14 @@ export default function Home() {
   return (
     <>
       <HeroBanner />
-      <Service />
-      <Solution />
-      <SuccessFullWork />
-      <TechnologySolution />
-      <LiquidityPricing />
-      <WhiteLabel />
-      <WhyChooseUs />
+      <div className=" bg-white">
+        <Service />
+        <Solution />
+        <div className=" bg-black">
+          <TechnologySolution />
+        </div>
+        <SuccessFullWork />
+      </div>
     </>
   );
 }

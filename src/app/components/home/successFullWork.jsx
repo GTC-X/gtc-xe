@@ -1,50 +1,42 @@
-import Image from "next/image"
+import React from 'react';
 
-const SuccessFullWork = () => {
+const GetStartedSection = () => {
     return (
-        <div className="py-10 container">
-            <div className="max-w-5xl mx-auto text-center">
-                <div className="flex flex-row items-center justify-center gap-10">
-                    <div className="relative w-full h-36 md:h-72">
-                        <Image src="/home/number.webp" fill alt="" className=" object-contain"
- />                       
-                    </div>
-                    <div className=" text-left">
-                        <h2 className="text-success Heading2">Years of successful work</h2>
-                        <p className="text mt-3">Since our establishment, we've firmly established our expertise in the trading arena.
-                            Throughout our journey, we've been trailblazers in shaping the financial services industry,
-                            consistently innovating exceptional products, services, and trading platforms that set new standards.
-                        </p>
-                    </div>
+        <div className="container py-16 px-4 text-center">
+            {/* Title and Subtitle */}
+            <h2 className="text-2xl font-semibold text-black mb-2">Ready to get started</h2>
+            <p className="  mb-10">Start trading in 3 easy steps</p>
+
+            {/* Steps */}
+            <div className="flex flex-col md:flex-row justify-center items-center gap-8 mb-10">
+                {/* Step 1 */}
+                <div className="flex flex-col max-w-48 items-center">
+                    <div className="flex items-center justify-center bg-black text-white rounded-full w-12 h-12 mb-4 text-lg font-bold">1</div>
+                    <h3 className="text-lg font-medium">Register</h3>
+                    <p className="  text-sm mt-1">Apply for a Live Account in less than 2 minutes</p>
                 </div>
-                <div className="mt-8 border border-white grid md:grid-cols-4 grid-cols-2 bg-gradient-to-r from-[#0C2951] to-[#0C122A]">
-                    <div className=" px-4 md:py-10 py-6 border-r border-r-white">
-                        <div className="mx-auto text-success flex justify-center items-center rounded-full h-32 w-32 font-semibold text-2xl bg-[url(/home/circle/circle1.svg)] bg-center bg-no-repeat">
-                            +10
-                        </div>
-                        <p className=" text-white mt-6">Tiers Market Depth</p>
-                    </div>
-                    <div className=" px-4 md:py-10 py-6 border-r border-r-white">
-                        <div className=" mx-auto  text-success flex justify-center items-center rounded-full h-32 w-32 font-semibold text-2xl bg-[url(/home/circle/circle2.svg)] bg-center bg-no-repeat">
-                        +27k
-                        </div>
-                        <p className=" text-white mt-6">Tiers Market Depth</p>
-                    </div>
-                    <div className=" px-4 md:py-10 py-6 border-r border-r-white">
-                        <div className=" mx-auto text-success flex justify-center items-center rounded-full h-32 w-32 font-semibold text-2xl bg-[url(/home/circle/circle3.svg)] bg-center bg-no-repeat">
-                        10ms
-                        </div>
-                        <p className=" text-white mt-6">Tiers Market Depth</p>
-                    </div>
-                    <div className=" px-4 md:py-10 py-6">
-                        <div className="  mx-auto  text-success flex justify-center items-center rounded-full h-32 w-32 font-semibold text-2xl bg-[url(/home/circle/circle4.svg)] bg-center bg-no-repeat">
-                            8
-                        </div>
-                        <p className=" text-white mt-6">Tiers Market Depth</p>
-                    </div>
+
+                {/* Step 2 */}
+                <div className="flex flex-col max-w-48 items-center">
+                    <div className="flex items-center justify-center bg-black text-white rounded-full w-12 h-12 mb-4 text-lg font-bold">2</div>
+                    <h3 className="text-lg font-medium">Deposit funds</h3>
+                    <p className="  text-sm mt-1">Fund your account via your chosen method</p>
+                </div>
+
+                {/* Step 3 */}
+                <div className="flex flex-col max-w-48 items-center">
+                    <div className="flex items-center justify-center bg-black text-white rounded-full w-12 h-12 mb-4 text-lg font-bold">3</div>
+                    <h3 className="text-lg font-medium">Trade</h3>
+                    <p className="  text-sm mt-1">Start trading with a reliable broker</p>
                 </div>
             </div>
+
+            {/* Get Started Button */}
+            <button className="bg-secondary text-white py-1 px-10 rounded-lg font-semibold hover:bg-secondary transition duration-300">
+                Get started
+            </button>
         </div>
-    )
-}
-export default SuccessFullWork
+    );
+};
+
+export default GetStartedSection;

@@ -1,67 +1,72 @@
-const solutions = [
-    {
-      title: "Aggregation & Distribution",
-      description: "Integrate and distribute liquidity across multiple sources.",
-      imgSrc: "/agg.png",
-      imgAlt: "Aggregation & Distribution",
-    },
-    {
-      title: "Bridges",
-      description: "Connect seamlessly to liquidity providers with our advanced bridging technology.",
-      imgSrc: "/bridges.svg",
-      imgAlt: "Bridges",
-    },
-    {
-      title: "Algo Hosting Service",
-      description: "Host your algorithmic trading systems with our secure and high-performance infrastructure.",
-      imgSrc: "/algo.svg",
-      imgAlt: "Algo Hosting Service",
-    },
-    {
-      title: "Forex Broker",
-      description: "Benefit from our comprehensive services tailored for Forex brokers.",
-      imgSrc: "/forex.svg",
-      imgAlt: "Forex Broker",
-    },
-    {
-      title: "Crypto Broker",
-      description: "Explore our specialized services designed for cryptocurrency brokers.",
-      imgSrc: "/crypto.svg",
-      imgAlt: "Crypto Broker",
-    },
-  ];
-  
-  const SolutionItem = ({ imgSrc, imgAlt, title, description }) => (
-    <div className="text-center md:text-left">
-      <img className="h-10 mx-auto md:mx-0" src={imgSrc} alt={imgAlt} />
-      <h3 className="text-white font-bold mt-4 md:mt-8">{title}</h3>
-      <p className="text-white text-sm mt-2 md:mt-4">{description}</p>
+import { FaChartLine, FaBuilding, FaBalanceScale, FaBolt } from 'react-icons/fa';
+import { LuCheckCircle } from "react-icons/lu";
+
+
+const Solution = () => {
+  return (
+    <div className="container py-16 text-center">
+      {/* Title Section */}
+      <h2 className="text-3xl font-medium text-black mb-4">
+        Trade and Invest Across 8 Markets with Access to 27,000+
+      </h2>
+      <div className="flex justify-center gap-4 mb-10  text-sm font-medium">
+        <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> Forex Trading</span>
+        <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> Stock Trading</span>
+        <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> Indices Trading</span>
+        <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> Energy Trading</span>
+      </div>
+
+      {/* Trading Categories */}
+      <div className="flex flex-col md:flex-row justify-center gap-6 mb-16">
+        <div className="flex flex-col items-center">
+          <FaChartLine className=" text-3xl mb-2" />
+          <h3 className="text-base font-medium text-secondary">Forex Trading</h3>
+          <p className=" text-sm">All global currency pairs</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <FaBuilding className="  text-3xl mb-2" />
+          <h3 className="text-base font-medium text-secondary">Stocks</h3>
+          <p className=" text-sm">Over 600 companies</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <FaBalanceScale className="  text-3xl mb-2" />
+          <h3 className="text-base font-medium text-secondary">Equity Indices</h3>
+          <p className=" text-sm">Major global indices</p>
+        </div>
+
+        <div className="flex flex-col items-center">
+          <FaBolt className="  text-3xl mb-2" />
+          <h3 className="text-base font-medium text-secondary">CFDs on Energy</h3>
+          <p className=" text-sm">Oil, Gas & all major energies</p>
+        </div>
+      </div>
+
+      {/* Platform Section */}
+      <h3 className="text-3xl font-medium text-black mb-6">
+        <strong>Powerful </strong> <span  >Trading Platform</span>
+      </h3>
+      <div className="flex justify-center gap-4 mb-10">
+        <button className="bg-black text-white py-1 px-4 rounded-full focus:outline-none hover:bg-gray-800">MetaTrader 4</button>
+        <button className="bg-gray-200 text-black py-1 px-4 rounded-full focus:outline-none hover:bg-gray-300">MetaTrader 5</button>
+      </div>
+
+      {/* MetaTrader 4 Description */}
+      <div className="flex flex-col md:flex-row items-center justify-between max-w-4xl mx-auto">
+        <div className="text-left max-w-md">
+          <h4 className="text-lg font-medium">MetaTrader 4</h4>
+          <p className="text-xs ">Powered by GTCFX</p>
+          <p className=" mt-3 text-sm">
+            Established as the industry standard, it contains everything a trader needs. It offers many features like advanced technical analysis, flexible trading systems, Expert Advisors, as well as a mobile app.
+          </p>
+        </div>
+        <div>
+          <img src="/03.png" alt="MetaTrader 4" className="w-full max-w-md  rounded-lg" />
+        </div>
+      </div>
     </div>
   );
-  
-  const Solution = () => {
-    return (
-      <section className="bg-gradient-to-r from-[#0C2951] to-[#0C122A]">
-        <div className="container py-12 text-center max-w-7xl">
-          <h2 className="Heading2 text-white">All-Inclusive Solutions</h2>
-          <p className="text mt-2 text-white">
-            We provide end-to-end solutions to streamline your trading operations and enhance efficiency.
-          </p>
-          <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-4 md:gap-8">
-            {solutions.map((solution, index) => (
-              <SolutionItem
-                key={index}
-                imgSrc={solution.imgSrc}
-                imgAlt={solution.imgAlt}
-                title={solution.title}
-                description={solution.description}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  };
-  
-  export default Solution;
-  
+};
+
+export default Solution;
