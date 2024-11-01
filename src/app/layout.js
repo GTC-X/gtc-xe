@@ -1,6 +1,7 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getLocale, getMessages } from 'next-intl/server';
 import './globals.css'
+import "react-multi-carousel/lib/styles.css";
 import { NextUIProvider } from "@nextui-org/react";
 import Header from './components/header';
 import Footer from './components/footer';
