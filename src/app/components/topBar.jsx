@@ -2,7 +2,7 @@ import React from 'react';
 
 const TopBar = () => {
   return (
-    <div className="bg-black container flex justify-end items-center space-x-4">
+    <div className=" container flex justify-end pb-2 items-center space-x-4">
       {/* Member Login */}
       <button className="flex items-center text-xs bg-gray-800 text-white hover:bg-gray-700 py-1 px-3 ">
         <span className="mr-2">🔑</span> Member Login

@@ -13,6 +13,7 @@ export default function Home() {
       <HeroBanner />
       <div className=" bg-white">
         <Service />
+        <div className=" h-2 w-full bg-primary"/>
         <Solution />
         <div className=" bg-black">
           <TechnologySolution />
