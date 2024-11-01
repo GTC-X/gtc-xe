@@ -6,6 +6,7 @@ import { FaBarsStaggered } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
+import TopBar from "./topBar";
 
 // Navigation Links
 const navigation = [
@@ -43,6 +44,7 @@ const Header = () => {
       className={`fixed inset-x-0 top-0 z-50 py-2 bg-black transition-all duration-300 ${isScrolled ? " bg-black" : "bg-gradient-to-r from-[#000f2f00] to-[#001c4400]"
         }`}
     >
+      <TopBar />
       <div className="container flex flex-row items-center justify-between py-3">
         {/* Logo */}
         <Link href="/">
@@ -68,8 +70,8 @@ const Header = () => {
               key={item.id}
               onClick={() => handleNavigationClick(item.id)} // Handle click for active state
               className={`text-base cursor-pointer ${activeItem === item.id
-                  ? "text-white border-b-2 border-secondary pb-2"
-                  : "text-white"
+                ? "text-white border-b-2 border-secondary pb-2"
+                : "text-white"
                 } hover:text-white transition-all`}
             >
               {item.icon ? (

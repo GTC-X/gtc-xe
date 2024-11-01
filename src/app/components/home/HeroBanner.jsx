@@ -1,11 +1,10 @@
-import Link from 'next/link';
 
 const HeroBanner = () => {
   return (
     <section
       className="bg-black text-white"
     >
-      <div className="container relative z-10 flex items-center justify-center h-[600px] md:h-[700px]">
+      <div className="container relative z-10 flex items-center justify-between h-[600px] md:h-[700px]">
         <div className="text-center md:text-left space-y-6 max-w-md">
           <h1 className="text-4xl font-bold leading-snug">
             Maximize Your <br /> Forex Trading Potential
