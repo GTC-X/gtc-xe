@@ -9,7 +9,7 @@ const Solution = () => {
       <h2 className="text-3xl font-medium text-black mb-4">
         Trade and Invest Across 8 Markets with Access to 27,000+
       </h2>
-      <div className="flex justify-center gap-4 mb-10  text-sm font-medium">
+      <div className="flex flex-wrap justify-center gap-4 mb-10  text-sm font-medium">
         <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> Forex Trading</span>
         <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> Stock Trading</span>
         <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> Indices Trading</span>
@@ -17,7 +17,7 @@ const Solution = () => {
       </div>
 
       {/* Trading Categories */}
-      <div className="flex flex-col md:flex-row justify-center gap-6 mb-16">
+      <div className="flex flex-wrap justify-center gap-6 mb-16">
         <div className="flex flex-col items-center">
           <FaChartLine className=" text-3xl mb-2" />
           <h3 className="text-base font-medium text-secondary">Forex Trading</h3>

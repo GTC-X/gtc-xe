@@ -51,7 +51,7 @@ const DownloadSection = () => {
             </div>
 
 
-            <div className="content-out">
+            <div className="content-out w-full">
                 <div className="flex flex-col gap-3 md:flex-row items-start">
                     <div className="app-side md:basis-1/4 bg-secondary bg-opacity-40 p-5 border-secondary">
                         <h4 className="text-lg ltr:text-left rtl:text-right flex flex-row gap-2 items-center text-white">
@@ -89,7 +89,7 @@ const DownloadSection = () => {
                         </div>
                     </div>
                     <div className="content-side md:basis-3/4">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                             <div className="ltr:pl-5 rtl:pr-5  ">
                                 <h4 className="text-base text-left flex flex-row gap-2 items-center text-white">
                                     <p className="text-secondary text-sm"><MdOutlineDesktopWindows size={24} /></p>

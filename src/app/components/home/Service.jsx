@@ -7,9 +7,9 @@ import {
     FaClock,
 } from "react-icons/fa";
 
-const Card = ({ title, icon }) => {
+const Card = ({ title, icon, isLast }) => {
     return (
-        <div className="flex flex-col items-center bg-black text-white rounded-lg p-6 w-56 transform transition-transform duration-300 hover:scale-105 hover:bg-gray-800 shadow-lg hover:shadow-xl">
+        <div className={` ${isLast ? " col-span-2 md:col-span-1" : " col-span-1"} flex flex-col items-center bg-black text-white rounded-lg p-6 transform transition-transform duration-300 hover:scale-105 hover:bg-gray-800 shadow-lg hover:shadow-xl`}>
             <div>{icon}</div>
             <h3 className="text-base font-medium">{title}</h3>
         </div>
@@ -21,27 +21,27 @@ const Service = () => {
         {
             title: "24/7 Customer Support",
             id: 1,
-            icon: <FaHeadset className="text-secondary text-7xl mb-4" />,
+            icon: <FaHeadset className="text-secondary text-4xl mb-4" />,
         },
         {
             title: "Tailored Solutions for Every Business",
             id: 2,
-            icon: <FaCogs className="text-secondary text-7xl mb-4" />,
+            icon: <FaCogs className="text-secondary text-4xl mb-4" />,
         },
         {
             title: "Trusted Global Partners",
             id: 3,
-            icon: <FaGlobe className="text-secondary text-7xl mb-4" />,
+            icon: <FaGlobe className="text-secondary text-4xl mb-4" />,
         },
         {
             title: "100% Secure Transactions",
             id: 4,
-            icon: <FaShieldAlt className="text-secondary text-7xl mb-4" />,
+            icon: <FaShieldAlt className="text-secondary text-4xl mb-4" />,
         },
         {
             title: "Fast & Transparent Processes",
             id: 5,
-            icon: <FaClock className="text-secondary text-7xl mb-4" />,
+            icon: <FaClock className="text-secondary text-4xl mb-4" />,
         },
     ];
     return (
@@ -59,9 +59,9 @@ const Service = () => {
                 </p>
 
                 {/* Features */}
-                <div className="mt-10 grid grid-cols-2 md:grid-cols-5 gap-6">
-                    {cards?.map((single) => (
-                        <Card key={single?.id} title={single?.title} icon={single?.icon} />
+                <div className="mt-10 grid grid-cols-2 md:grid-cols-5 md:-6 gap-2">
+                    {cards?.map((single, index) => (
+                        <Card key={single?.id} title={single?.title} icon={single?.icon} isLast={cards?.length - 1 == index} />
                     ))}
                 </div>
             </div>
