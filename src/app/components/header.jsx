@@ -104,11 +104,11 @@ const Header = () => {
             className="lg:hidden"
           >
             <div className="fixed inset-0 z-50" />
-            <DialogPanel className="fixed inset-y-0 left-0 z-50 w-[90%] overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <DialogPanel className="fixed inset-y-0 left-0 z-50 shadow-lg opacity-95  border border-white rounded-tr-lg rounded-br-lg w-[85%] overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
                 {/* Mobile Menu Logo */}
                 <Link href="/" className="relative w-24 h-12">
-                  <Image src="/clogo.png" alt="Logo" fill className="object-contain" />
+                  <Image src="/logo-new.png" alt="Logo" fill className="object-contain" />
                 </Link>
                 {/* Close Button */}
                 <button
@@ -117,7 +117,7 @@ const Header = () => {
                   className="-m-2.5 rounded-md p-2.5 text-gray-700"
                 >
                   <span className="sr-only">Close menu</span>
-                  <IoClose aria-hidden="true" className="h-6 w-6" />
+                  <IoClose aria-hidden="true" className="h-6 w-6 text-white" />
                 </button>
               </div>
 
@@ -129,7 +129,7 @@ const Header = () => {
                         key={item.id}
                         href={item.href}
                         onClick={() => handleNavigationClick(item.id)}
-                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                        className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white "
                       >
                         {item.name}
                       </Link>
