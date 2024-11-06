@@ -51,7 +51,7 @@ const Service = () => {
                 <h2 className="text-3xl font-semibold text-secondary mb-4">
                     Invest with the World’s Leading Online Trading Platform
                 </h2>
-                <p className="text-lg text-gray-600  mx-auto">
+                <p className="text-lg  mx-auto">
                     Access over 27,000 financial instruments on the most reliable platform
                     available. Our MetaTrader platform ensures stable performance and
                     competitive spreads, giving you the advantage you need to make the

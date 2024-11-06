@@ -4,6 +4,7 @@ import Service from "./components/home/Service";
 import Solution from "./components/home/solution";
 import SuccessFullWork from "./components/home/successFullWork";
 import TechnologySolution from "./components/home/technologySolution";
+import Markets from "./components/home/market";
 
 
 export const metadata = {
@@ -24,6 +25,7 @@ export default function Home() {
         <div className=" bg-black">
           <TechnologySolution />
         </div>
+        <Markets />
         <SuccessFullWork />
       </div>
     </>

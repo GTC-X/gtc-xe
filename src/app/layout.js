@@ -28,7 +28,7 @@ export default async function RootLayout({
         <NextIntlClientProvider messages={messages}>
           <NextUIProvider>
             <Header />
-            <div className=' pt-28'>
+            <div className=' pt-16 md:pt-28'>
               {children}
             </div>
             <Footer />

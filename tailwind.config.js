@@ -19,7 +19,7 @@ module.exports = {
         primary: "#040000",
         secondary: "#EA0A0A",
         success: "#65BC7B",
-        neutral: "#02002f",
+        neutral: "#e6e6e6",
       },
       fontFamily: {
         sans: ['var(--font-outfit)'],
