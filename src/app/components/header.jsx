@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
-import { FaBarsStaggered } from "react-icons/fa6";
+import { FaBarsStaggered, FaChevronDown } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import Image from "next/image";
 import Link from "next/link";
@@ -18,21 +18,18 @@ const navigation = [
     name: "About",
     id: "about",
     subItems: [
-      [{ name: "About The East Trade", href: "/about/about-us" }, { name: "Why Us", href: "/about/why-choose-us" }],
+      { name: "About The East Trade", href: "/about/about-us" },
+      { name: "Why Us", href: "/about/why-choose-us" },
     ],
   },
   {
     name: "Trading",
     id: "trading",
     subItems: [
-      [
-        { name: "Forex Trading", href: "/trading/trade-forex" },
-        { name: "Precious Metals", href: "/trading/precious-metal" },
-        { name: "Stock CFDs", href: "/trading/stock-cfd" },
-      ],
-      [
-        { name: "Equity Indices", href: "/trading/indicies" },
-      ],
+      { name: "Forex Trading", href: "/trading/trade-forex" },
+      { name: "Precious Metals", href: "/trading/precious-metal" },
+      { name: "Stock CFDs", href: "/trading/stock-cfd" },
+      { name: "Equity Indices", href: "/trading/indicies" },
     ],
   },
   { name: "Open Live Account", href: "/account", id: "account" },
@@ -42,25 +39,9 @@ const navigation = [
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const [activeItem, setActiveItem] = useState("");
-  const [showMegaMenu, setShowMegaMenu] = useState(null); // Track open mega menu
+  const [showDropdown, setShowDropdown] = useState(null); // Track open dropdown
   const pathname = usePathname();
   const router = useRouter();
-
-  // Set the active item based on current pathname
-  useEffect(() => {
-    navigation.forEach((item) => {
-      if (item.subItems) {
-        item.subItems.flat().forEach((subItem) => {
-          if (pathname.includes(subItem.href)) {
-            setActiveItem(item.id); // Sets main menu item as active if submenu is selected
-          }
-        });
-      } else if (pathname === item.href) {
-        setActiveItem(item.id);
-      }
-    });
-  }, [pathname]);
 
   // Function to detect scroll
   useEffect(() => {
@@ -73,7 +54,7 @@ const Header = () => {
 
   const ref = useDetectClickOutside({
     onTriggered: () => {
-      setShowMegaMenu(null);
+      setShowDropdown(null);
     },
   });
 
@@ -84,56 +65,67 @@ const Header = () => {
     >
       <TopBar />
       <div className="pb-2 bg-primary">
-        <div className="container flex flex-row items-center justify-between py-3">
+        <div className="container flex gap-2 flex-row items-center justify-between py-3">
           {/* Logo */}
           <Link href="/">
             <img className="h-8 md:h-12" src="/logo-new.png" alt="Logo" />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex lg:gap-x-8 items-center" ref={ref}>
-            {navigation.map((item) => (
-              <div key={item.id} className="">
-                <div
-                  onClick={() => setShowMegaMenu(item.subItems ? item.id : null)}
-                  className={`text-base hover:text-secondary cursor-pointer ${activeItem === item.id ? "border-b-2 hover:text-secondary text-secondary border-secondary pb-2" : "text-white"
-                    } hover:text-white transition-all`}
-                >
-                  <Link href={item.href || "#"}>{item.name}</Link>
-                </div>
+          <div className="hidden md:flex gap-x-6 items-center" ref={ref}>
+            {navigation.map((item) => {
+              const isActive =
+                pathname === item.href ||
+                (item.subItems && item.subItems.some((subItem) => pathname.includes(subItem.href)));
 
-                {item.subItems && showMegaMenu === item.id && (
-                  <div className="absolute left-0 top-full grid grid-cols-2 bg-white shadow-lg w-full px-4 py-6  transition-transform transform duration-200 ease-out z-50">
-                    <div />
-                    <div className=" flex">
-                      <div className="flex gap-8">
-                        {item.subItems.map((column, columnIndex) => (
-                          <div key={columnIndex} className="flex flex-col gap-2">
-                            {column.map((subItem) => (
-                              <div
-                                key={subItem.href}
-                                onClick={() => {
-                                  router.push(subItem.href);
-                                  setShowMegaMenu(null);
-                                }}
-                                className={`block cursor-pointer hover:text-secondary rounded-md  ${pathname === subItem.href ? "text-secondary" : "text-primary"
-                                  }`}
-                              >
-                                {subItem.name}
-                              </div>
-                            ))}
+              return (
+                <div
+                  key={item.id}
+                  className="relative"
+                  onMouseEnter={() => item.subItems && setShowDropdown(item.id)}
+                  onMouseLeave={() => item.subItems && setShowDropdown(null)}
+                >
+                  <Link
+                    href={item.href || "#"}
+                    className={`text-base cursor-pointer flex items-center space-x-3 ${isActive ? "text-secondary" : "text-white"
+                      }`}
+                  >
+                    <span>{item.name}</span>
+                    {item.subItems && (
+                      <FaChevronDown
+                        className={`transition-transform text-sm ${showDropdown === item.id ? "rotate-180" : ""
+                          }`}
+                      />
+                    )}
+                  </Link>
+
+                  {/* Dropdown Menu */}
+                  {item.subItems && showDropdown === item.id && (
+                    <div className="absolute left-0 pt-2 z-50">
+                      <div className="bg-white shadow-lg  rounded-md p-2 ">
+                        {item.subItems.map((subItem) => (
+                          <div
+                            key={subItem.href}
+                            onClick={() => {
+                              router.push(subItem.href);
+                              setShowDropdown(null); // Hide dropdown on selection
+                            }}
+                            className={`block cursor-pointer px-4 whitespace-pre py-2 ${pathname === subItem.href ? "text-secondary" : "text-primary"
+                              } hover:bg-gray-100`}
+                          >
+                            {subItem.name}
                           </div>
                         ))}
                       </div>
                     </div>
-                  </div>
-                )}
-              </div>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="lg:hidden flex gap-6">
+          <div className="md:hidden flex gap-6">
             <LanguageMobile />
             <button
               type="button"
@@ -146,7 +138,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Dialog */}
-          <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
+          <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen} className="md:hidden">
             <div className="fixed inset-0 z-50" />
             <DialogPanel className="fixed inset-y-0 left-0 z-50 shadow-lg opacity-95 border border-white rounded-tr-lg rounded-br-lg w-[85%] overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
@@ -169,28 +161,31 @@ const Header = () => {
                     {navigation.map((item) => (
                       <div key={item.id}>
                         {item.subItems ? (
-                          <>
-                            <span className="block px-3 py-2 text-base font-semibold leading-7 text-white">
-                              {item.name}
-                            </span>
-                            <div className="pl-6">
-                              {item.subItems.flat().map((subItem) => (
+                          <details className="group">
+                            <summary className="block py-2 text-base font-semibold leading-7 text-white cursor-pointer flex items-center space-x-3">
+                              <span>{item.name}</span>
+                              <FaChevronDown className="text-white text-sm group-open:rotate-180 transition-transform" />
+                            </summary>
+                            <div className="pl-6 space-y-2">
+                              {item.subItems.map((subItem) => (
                                 <Link
                                   key={subItem.href}
                                   href={subItem.href}
                                   onClick={() => setMobileMenuOpen(false)}
-                                  className="block px-3 py-1 text-sm text-gray-300"
+                                  className={`block px-3 py-1 text-sm ${pathname === subItem.href ? "text-secondary" : "text-gray-300"
+                                    }`}
                                 >
                                   {subItem.name}
                                 </Link>
                               ))}
                             </div>
-                          </>
+                          </details>
                         ) : (
                           <Link
                             href={item.href}
                             onClick={() => setMobileMenuOpen(false)}
-                            className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white"
+                            className={`block rounded-lg py-2 text-base font-semibold leading-7 ${pathname === item.href ? "text-secondary" : "text-white"
+                              }`}
                           >
                             {item.name}
                           </Link>

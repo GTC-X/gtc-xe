@@ -26,7 +26,7 @@ const TradeForexSection = ({
     return (
         <div className="container mx-auto">
             <section className="bg-black text-white pt-16 pb-10">
-                <div className=" mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-0">
+                <div className=" mx-auto flex flex-col md:flex-row items-center justify-between">
                     {/* Left Section */}
                     <div className="md:w-1/2 space-y-4 text-center md:text-left">
                         <h1 className="text-4xl font-bold">{title}</h1>

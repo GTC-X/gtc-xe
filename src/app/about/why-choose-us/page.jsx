@@ -3,7 +3,7 @@ import { LuCheckCircle } from "react-icons/lu";
 const WhyChooseUs = () => {
     return (
         <div className=" bg-white">
-            <div className="container mx-auto py-10 pt-24">
+            <div className="container mx-auto py-10 md:pt-24 pt-10">
                 {/* Title Section */}
                 <h1 className="text-3xl font-bold  mb-4">Why Choose The East Trade?</h1>
                 <p className="text-lg mb-2">
