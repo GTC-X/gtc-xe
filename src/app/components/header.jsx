@@ -30,6 +30,7 @@ const navigation = [
       { name: "Precious Metals", href: "/trading/precious-metal" },
       { name: "Stock CFDs", href: "/trading/stock-cfd" },
       { name: "Equity Indices", href: "/trading/indicies" },
+      { name: "Energies", href: "/trading/energies" },
     ],
   },
   { name: "Open Live Account", href: "/account", id: "account" },

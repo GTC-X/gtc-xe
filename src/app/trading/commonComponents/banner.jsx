@@ -2,10 +2,12 @@ import React from "react";
 
 const CardIcon = ({ title, img }) => {
     return (
-        <div className={`${img ? "bg-neutral" : ""} items-center grid grid-cols-3  gap-3 py-2 px-4 rounded-lg`}>
-            <div>
-                <img className="mx-auto h-14" src={img} alt={title} />
-            </div>
+        <div className={`bg-neutral items-center grid grid-cols-3 gap-3 py-2 px-4 rounded-lg`}>
+            {img &&
+                <div>
+                    <img className="mx-auto h-14" src={img} alt={title} />
+                </div>
+            }
             <h3
                 className="text-left text-base leading-5 col-span-2"
                 dangerouslySetInnerHTML={{ __html: title }}

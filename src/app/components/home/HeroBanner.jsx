@@ -54,9 +54,9 @@ const HeroBanner = () => {
           setCurrentSlide(currentSlide == 1 ? 0 : 1)
         }} // Update current slide state on change
       >
-        <div className="container relative z-10 flex flex-col-reverse md:flex-row items-center justify-between min-h-[500px] md:min-h-[600px]">
+        <div className="container relative z-10 flex flex-col-reverse md:flex-row items-center justify-between min-h-[450px]">
           <div className="text-center md:text-left space-y-6 max-w-md">
-            <h1 className="text-4xl font-bold leading-snug">
+            <h1 className="md:text-4xl text-2xl font-bold leading-snug">
               Maximize Your <br /> Forex Trading Potential
             </h1>
             <ul className="space-y-2 text-lg">
@@ -82,9 +82,9 @@ const HeroBanner = () => {
           </div>
         </div>
 
-        <div className="container relative z-10 flex items-center flex-col-reverse md:flex-row justify-between min-h-[500px] md:min-h-[600px]">
+        <div className="container relative z-10 flex items-center flex-col-reverse md:flex-row justify-between min-h-[450px]">
           <div className="text-center md:text-left space-y-6 max-w-md">
-            <h1 className="text-4xl font-bold leading-snug">GTCFX</h1>
+            <h1 className="md:text-4xl text-2xl font-bold leading-snug">GTCFX</h1>
             <ul className="space-y-2 text-lg">
               <li className="flex justify-center md:justify-start items-center">
                 <span className="w-2 h-2 bg-white rounded-full mr-2"></span>
