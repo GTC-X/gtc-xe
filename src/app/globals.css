@@ -76,8 +76,8 @@ body {
 }
 
 .react-multi-carousel-dot--active button {
-  border-color: #ea0a0a;
-  background: #ea0a0a;
+  border-color: #ea0a0a!important;
+  background: #ea0a0a!important;
 }
 
 

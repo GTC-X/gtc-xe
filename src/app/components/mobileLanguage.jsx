@@ -1,22 +1,20 @@
 import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { useLocale } from "next-intl";
-import { useDetectClickOutside } from "react-detect-click-outside";
-import { useTranslations } from "next-intl";
-import { RxCross2 } from "react-icons/rx";
+ import { useDetectClickOutside } from "react-detect-click-outside";
+ import { RxCross2 } from "react-icons/rx";
 import Image from "next/image";
 import { FaAngleDown } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { useLanguage } from "@/shared";
 
 export default function LanguageMobile(props) {
     const pathname = usePathname();
-    const locale = useLocale();
+    const [{ code }] = useLanguage();
 
-    const pathnameWithoutLocale = pathname.replace(`/${locale}`, "");
+    const pathnameWithoutLocale = pathname.replace(`/${code}`, "");
     const [open, setOpen] = useState(false);
-    const t = useTranslations("navigation");
-    const ref = useDetectClickOutside({
+     const ref = useDetectClickOutside({
         onTriggered: () => {
             setOpen(false);
         },
@@ -35,9 +33,9 @@ export default function LanguageMobile(props) {
                 }}
             >
                 <img
-                    src={`/${locale || "en"}.webp`}
+                    src={`/${code || "en"}.webp`}
                     className="h-[22px] w-[32px]"
-                    alt={locale.toLowerCase()}
+                    alt={code.toLowerCase()}
                 />
                 {<FaAngleDown />}
             </Popover.Button>
@@ -64,10 +62,10 @@ export default function LanguageMobile(props) {
                             <RxCross2 />
                         </button>
                         <Image
-                            src={`/${locale || "en"}.webp`}
+                            src={`/${code || "en"}.webp`}
                             width={28}
                             height={16}
-                            alt={locale.toLowerCase()}
+                            alt={code.toLowerCase()}
                         />
                     </div>
 

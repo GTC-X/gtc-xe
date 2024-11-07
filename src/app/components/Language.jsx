@@ -2,18 +2,20 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { useLocale } from "next-intl";
 import { FaAngleDown, FaAngleUp } from "react-icons/fa";
 import { useDetectClickOutside } from "react-detect-click-outside";
 import Link from "next/link";
+import { useLanguage } from "@/shared";
+import { useTranslation } from "react-i18next";
 
 const Language = (props) => {
   const { currentLanguage } = props;
-  const locale = useLocale();
   const pathname = usePathname();
-  const isAr = pathname.includes("/ar-AE");
+  const { i18n, t } = useTranslation();
   const router = useRouter();
-  const pathnameWithoutLocale = pathname.replace(`/${locale}`, "");
+  const [{ direction, code }] = useLanguage();
+
+  // const pathnameWithoutLocale = pathname.replace(`/${locale}`, "");
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const ref = useDetectClickOutside({
     onTriggered: () => {
@@ -24,9 +26,15 @@ const Language = (props) => {
 
   const languages = [
     { code: "en", label: "English", flagSrc: "/en.webp" },
-    { code: "ar-AE", label: "العربية", flagSrc: "/ar.webp" },
+    { code: "ar", label: "العربية", flagSrc: "/ar.webp" },
     // Add more languages as needed
   ];
+
+  const handleLanguageChange = (code) => {
+    i18n.changeLanguage(code);
+    localStorage.setItem("i18nextLng", code)
+    setDropdownOpen(false)
+  };
 
   return (
     <div className="dropdown dropdown-hover z-50 relative">
@@ -36,10 +44,10 @@ const Language = (props) => {
         className="bg-trasparent text-white border border-gray-200 px-2 py-[3px] text-sm flex justify-start items-center gap-2 cursor-pointer capitalize"
       >
         <Image
-          src={`/${locale || "en"}.webp`}
+          src={`/${code || "en"}.webp`}
           width={22}
           height={16}
-          alt={locale.toLowerCase()}
+          alt={code.toLowerCase()}
         />
         {dropdownOpen ? <FaAngleUp /> : <FaAngleDown />}
       </button>
@@ -50,11 +58,10 @@ const Language = (props) => {
         >
           {languages.map((language) => (
             <li key={language.code}>
-              <Link
-                href={
-                  pathnameWithoutLocale === "" ? "/" : pathnameWithoutLocale
-                }
-                locale={language.code}
+              <div
+                onClick={() => {
+                  handleLanguageChange(language?.code)
+                }}
                 className="language p-2"
               >
                 <Image
@@ -64,7 +71,7 @@ const Language = (props) => {
                   alt={language.label}
                 />
                 {language.label}
-              </Link>
+              </div>
             </li>
           ))}
         </ul>

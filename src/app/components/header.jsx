@@ -10,32 +10,9 @@ import TopBar from "./topBar";
 import LanguageMobile from "./mobileLanguage";
 import { usePathname, useRouter } from "next/navigation";
 import { useDetectClickOutside } from "react-detect-click-outside";
+import { useTranslation } from "react-i18next";
 
-// Navigation Links
-const navigation = [
-  { name: "Home", href: "/", id: "home" },
-  {
-    name: "About",
-    id: "about",
-    subItems: [
-      { name: "About The East Trade", href: "/about/about-us" },
-      { name: "Why Us", href: "/about/why-choose-us" },
-    ],
-  },
-  {
-    name: "Trading",
-    id: "trading",
-    subItems: [
-      { name: "Forex Trading", href: "/trading/trade-forex" },
-      { name: "Precious Metals", href: "/trading/precious-metal" },
-      { name: "Stock CFDs", href: "/trading/stock-cfd" },
-      { name: "Equity Indices", href: "/trading/indicies" },
-      { name: "Energies", href: "/trading/energies" },
-    ],
-  },
-  { name: "Open Live Account", href: "/account", id: "account" },
-  { name: "MT4 / MT5 Trading Platform", href: "/platform", id: "platform" },
-];
+
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -43,7 +20,33 @@ const Header = () => {
   const [showDropdown, setShowDropdown] = useState(null); // Track open dropdown
   const pathname = usePathname();
   const router = useRouter();
+  const { t } = useTranslation();
 
+  // Navigation Links
+  const navigation = [
+    { name: t("navBar.home"), href: "/", id: "home" },
+    {
+      name: t("navBar.aboutUs.about"),
+      id: "about",
+      subItems: [
+        { name: t("navBar.aboutUs.aboutEast"), href: "/about/about-us" },
+        { name: t("navBar.aboutUs.whyUs"), href: "/about/why-choose-us" },
+      ],
+    },
+    {
+      name: t("navBar.trading.trading"),
+      id: "trading",
+      subItems: [
+        { name: t("navBar.trading.forex"), href: "/trading/trade-forex" },
+        { name: t("navBar.trading.matel"), href: "/trading/precious-metal" },
+        { name: t("navBar.trading.stock"), href: "/trading/stock-cfd" },
+        { name: t("navBar.trading.equity"), href: "/trading/indicies" },
+        { name: t("navBar.trading.energies"), href: "/trading/energies" },
+      ],
+    },
+    { name: "Open Live Account", href: "/account", id: "account" },
+    { name: "MT4 / MT5 Trading Platform", href: "/platform", id: "platform" },
+  ];
   // Function to detect scroll
   useEffect(() => {
     const handleScroll = () => {
@@ -88,13 +91,13 @@ const Header = () => {
                 >
                   <Link
                     href={item.href || "#"}
-                    className={`text-base cursor-pointer flex items-center space-x-3 ${isActive ? "text-secondary" : "text-white"
+                    className={`text-base cursor-pointer flex items-center ${isActive ? "text-secondary" : "text-white"
                       }`}
                   >
                     <span>{item.name}</span>
                     {item.subItems && (
                       <FaChevronDown
-                        className={`transition-transform text-sm ${showDropdown === item.id ? "rotate-180" : ""
+                        className={`transition-transform text-sm mx-3 ${showDropdown === item.id ? "rotate-180" : ""
                           }`}
                       />
                     )}
@@ -163,9 +166,9 @@ const Header = () => {
                       <div key={item.id}>
                         {item.subItems ? (
                           <details className="group">
-                            <summary className="block py-2 text-base font-semibold leading-7 text-white cursor-pointer flex items-center space-x-3">
+                            <summary className="block py-2 text-base font-semibold leading-7 text-white cursor-pointer flex items-center ">
                               <span>{item.name}</span>
-                              <FaChevronDown className="text-white text-sm group-open:rotate-180 transition-transform" />
+                              <FaChevronDown className="text-white text-sm mx-3 group-open:rotate-180 transition-transform" />
                             </summary>
                             <div className="pl-6 space-y-2">
                               {item.subItems.map((subItem) => (

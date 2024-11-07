@@ -1,0 +1,26 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "topBar": {
+    "memberLogin": "Member login",
+    "openAccount": "OPEN AN ACCOUNT"
+  },
+  "navBar": {
+    "home": "Home",
+    "aboutUs": {
+      "about": "About Us",
+      "aboutEast": "About the East trade",
+      "whyUs": "Why Us",
+      "contactUs": "Contact US"
+    },
+    "trading": {
+      "trading": "Trading",
+      "forex": "Forex Trading",
+      "matel": "Precious Metals",
+      "stock": "Stock CFDs",
+      "equity": "Equity Indices",
+      "energies": "Energies"
+    }
+  }
+}
