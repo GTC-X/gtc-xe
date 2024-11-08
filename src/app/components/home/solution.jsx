@@ -10,10 +10,10 @@ const Solution = () => {
   return (
     <div className="container py-16 text-center">
       {/* Title Section */}
-      <h2 className="text-3xl font-medium text-black mb-4">
+      <h2 className="text-xl md:text-3xl font-medium text-black mb-4">
         {t("HomePage.tradeSection.title")}
       </h2>
-      <div className="flex flex-wrap justify-center gap-4 mb-10  text-sm font-medium">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-10 mb-10  text-sm font-medium">
         <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' /> {t("HomePage.tradeSection.option1")}</span>
         <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' />{t("HomePage.tradeSection.option2")}</span>
         <span className='flex gap-2 items-center'><LuCheckCircle className='text-green-600' />{t("HomePage.tradeSection.option3")}</span>
@@ -21,21 +21,21 @@ const Solution = () => {
       </div>
 
       {/* Trading Categories */}
-      <div className="flex flex-wrap justify-center gap-6 mb-16">
+      <div className="flex flex-wrap justify-center gap-4 md:gap-10 mb-16">
         <div className="flex flex-col items-center">
-          <FaChartLine className=" text-3xl mb-2" />
+          <FaChartLine className="text-3xl mb-2" />
           <h3 className="text-base font-medium text-secondary">{t("HomePage.tradeSection.cards.card1.title")}</h3>
           <p className=" text-sm">{t("HomePage.tradeSection.cards.card1.para")}</p>
         </div>
 
         <div className="flex flex-col items-center">
-          <FaBuilding className="  text-3xl mb-2" />
+          <FaBuilding className=" text-3xl mb-2" />
           <h3 className="text-base font-medium text-secondary">{t("HomePage.tradeSection.cards.card2.title")}</h3>
           <p className=" text-sm">{t("HomePage.tradeSection.cards.card2.para")}</p>
         </div>
 
         <div className="flex flex-col items-center">
-          <FaBalanceScale className="  text-3xl mb-2" />
+          <FaBalanceScale className="text-3xl mb-2" />
           <h3 className="text-base font-medium text-secondary">{t("HomePage.tradeSection.cards.card3.title")}</h3>
           <p className=" text-sm">{t("HomePage.tradeSection.cards.card3.para")}</p>
         </div>

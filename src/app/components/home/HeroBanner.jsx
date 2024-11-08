@@ -26,15 +26,10 @@ const HeroBanner = () => {
   const [{ direction }] = useLanguage()
 
   const slides = [
-    {
-      img: "/03.png",
-      heading: t("HomePage.slides.slideOneTitle"),
-      para: t("HomePage.slides.slideOnePara"),
-    },
-    {
-      img: "/banner2.webp",
-      heading: t("HomePage.slides.slideTwoTitle"),
-      heading2: t("HomePage.slides.slideTwoTitle2"),
+
+    {img: "/banner4.webp",
+      heading: t("HomePage.slides.slideFourTitle"),
+      heading2: t("HomePage.slides.slideFourTitle2"),
     },
     {
       img: "/banner3.webp",
@@ -42,9 +37,9 @@ const HeroBanner = () => {
       heading2: t("HomePage.slides.slideThreeTitle2"),
     },
     {
-      img: "/banner4.webp",
-      heading: t("HomePage.slides.slideFourTitle"),
-      heading2: t("HomePage.slides.slideFourTitle2"),
+      img: "/banner2.webp",
+      heading: t("HomePage.slides.slideTwoTitle"),
+      heading2: t("HomePage.slides.slideTwoTitle2"),
     },
   ];
 
@@ -71,10 +66,10 @@ const HeroBanner = () => {
         ssr={true}
         infinite={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={2000}
         keyBoardControl={true}
         customTransition="transform 1s ease-in-out"
-        transitionDuration={1000}
+        transitionDuration={800}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
@@ -86,26 +81,25 @@ const HeroBanner = () => {
         {slides.map((single, index) => (
           <div dir={direction} key={index} className="container relative z-10 grid gap-4 md:grid-cols-2 grid-cols-1 items-center justify-between min-h-[450px]">
             <div className="text-center ltr:text-left rtl:text-right    order-2 md:order-1  ">
-              <h1 className="md:text-4xl mb-2 text-2xl font-bold leading-snug"
+              <h1 className="md:text-3xl mb-2 text-2xl font-semibold leading-snug"
                 dangerouslySetInnerHTML={{ __html: single?.heading }}
               />
 
               <div dangerouslySetInnerHTML={{ __html: single?.para }} />
-              <div className="md:!mb-16 !mb-4" dangerouslySetInnerHTML={{ __html: single?.heading2 }} />
+              <div className="md:!mb-16 !mb-4 text-2xl" dangerouslySetInnerHTML={{ __html: single?.heading2 }} />
 
               <button className="bg-secondary text-white py-1 px-10 rounded-lg font-medium hover:bg-secondary transition duration-300">
                 {t("common.gettingStarted")}
               </button>
             </div>
-            <div className="relative order-1 md:order-2 bg-no-repeat bg-contain bg-[url('/home-hero-bg.png')]"
+            <div className="relative order-1 md:order-2 w-full h-64 bg-no-repeat bg-contain bg-[url('/home-hero-bg.png')]"
               style={{ backgroundPosition: "right" }}
             >
               <Image
                 src={single?.img}
                 alt="Trading Platform"
-                width={400}    // Set appropriate width for your image
-                height={260}   // Set appropriate height for your image
-                className="mx-auto"
+                fill // Set appropriate height for your image
+                className="object-contain"
               />
             </div>
           </div>

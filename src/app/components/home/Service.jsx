@@ -24,37 +24,37 @@ const Service = () => {
         {
             title: t("HomePage.investSection.card1"),
             id: 1,
-            icon: <FaHeadset className="text-secondary text-4xl mb-4" />,
+            icon: <FaHeadset className="text-secondary text-3xl mb-4" />,
         },
         {
             title: t("HomePage.investSection.card2"),
             id: 2,
-            icon: <FaCogs className="text-secondary text-4xl mb-4" />,
+            icon: <FaCogs className="text-secondary text-3xl mb-4" />,
         },
         {
             title: t("HomePage.investSection.card3"),
             id: 3,
-            icon: <FaGlobe className="text-secondary text-4xl mb-4" />,
+            icon: <FaGlobe className="text-secondary text-3xl mb-4" />,
         },
         {
             title: t("HomePage.investSection.card4"),
             id: 4,
-            icon: <FaShieldAlt className="text-secondary text-4xl mb-4" />,
+            icon: <FaShieldAlt className="text-secondary text-3xl mb-4" />,
         },
         {
             title: t("HomePage.investSection.card5"),
             id: 5,
-            icon: <FaClock className="text-secondary text-4xl mb-4" />,
+            icon: <FaClock className="text-secondary text-3xl mb-4" />,
         },
     ];
     return (
         <div className="container py-14 ">
             <div className=" text-center">
                 {/* Title and Description */}
-                <h2 className="text-3xl font-semibold text-secondary mb-4">
+                <h2 className="text-xl md:text-3xl font-medium text-secondary mb-4">
                     {t("HomePage.investSection.title")}
                 </h2>
-                <p className="text-lg  mx-auto">
+                <p className="text-lg  mx-auto max-w-5xl">
                     {t("HomePage.investSection.para")}
 
                 </p>
