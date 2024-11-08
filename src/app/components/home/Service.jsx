@@ -1,4 +1,5 @@
-import Image from "next/image";
+'use client'
+import { useTranslation } from "react-i18next";
 import {
     FaHeadset,
     FaCogs,
@@ -17,29 +18,31 @@ const Card = ({ title, icon, isLast }) => {
 };
 
 const Service = () => {
+    const { t } = useTranslation();
+
     const cards = [
         {
-            title: "24/7 Customer Support",
+            title: t("HomePage.investSection.card1"),
             id: 1,
             icon: <FaHeadset className="text-secondary text-4xl mb-4" />,
         },
         {
-            title: "Tailored Solutions for Every Business",
+            title: t("HomePage.investSection.card2"),
             id: 2,
             icon: <FaCogs className="text-secondary text-4xl mb-4" />,
         },
         {
-            title: "Trusted Global Partners",
+            title: t("HomePage.investSection.card3"),
             id: 3,
             icon: <FaGlobe className="text-secondary text-4xl mb-4" />,
         },
         {
-            title: "100% Secure Transactions",
+            title: t("HomePage.investSection.card4"),
             id: 4,
             icon: <FaShieldAlt className="text-secondary text-4xl mb-4" />,
         },
         {
-            title: "Fast & Transparent Processes",
+            title: t("HomePage.investSection.card5"),
             id: 5,
             icon: <FaClock className="text-secondary text-4xl mb-4" />,
         },
@@ -49,13 +52,11 @@ const Service = () => {
             <div className=" text-center">
                 {/* Title and Description */}
                 <h2 className="text-3xl font-semibold text-secondary mb-4">
-                    Invest with the World’s Leading Online Trading Platform
+                    {t("HomePage.investSection.title")}
                 </h2>
                 <p className="text-lg  mx-auto">
-                    Access over 27,000 financial instruments on the most reliable platform
-                    available. Our MetaTrader platform ensures stable performance and
-                    competitive spreads, giving you the advantage you need to make the
-                    most of every trade.
+                    {t("HomePage.investSection.para")}
+
                 </p>
 
                 {/* Features */}

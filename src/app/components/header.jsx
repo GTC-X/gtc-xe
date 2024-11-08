@@ -24,28 +24,28 @@ const Header = () => {
 
   // Navigation Links
   const navigation = [
-    { name: t("navBar.home"), href: "/", id: "home" },
+    { name: t("HomePage.navBar.home"), href: "/", id: "home" },
     {
-      name: t("navBar.aboutUs.about"),
+      name: t("HomePage.navBar.aboutUs.about"),
       id: "about",
       subItems: [
-        { name: t("navBar.aboutUs.aboutEast"), href: "/about/about-us" },
-        { name: t("navBar.aboutUs.whyUs"), href: "/about/why-choose-us" },
+        { name: t("HomePage.navBar.aboutUs.aboutEast"), href: "/about/about-us" },
+        { name: t("HomePage.navBar.aboutUs.whyUs"), href: "/about/why-choose-us" },
       ],
     },
     {
-      name: t("navBar.trading.trading"),
+      name: t("HomePage.navBar.trading.trading"),
       id: "trading",
       subItems: [
-        { name: t("navBar.trading.forex"), href: "/trading/trade-forex" },
-        { name: t("navBar.trading.matel"), href: "/trading/precious-metal" },
-        { name: t("navBar.trading.stock"), href: "/trading/stock-cfd" },
-        { name: t("navBar.trading.equity"), href: "/trading/indicies" },
-        { name: t("navBar.trading.energies"), href: "/trading/energies" },
+        { name: t("HomePage.navBar.trading.forex"), href: "/trading/trade-forex" },
+        { name: t("HomePage.navBar.trading.matel"), href: "/trading/precious-metal" },
+        { name: t("HomePage.navBar.trading.stock"), href: "/trading/stock-cfd" },
+        { name: t("HomePage.navBar.trading.equity"), href: "/trading/indicies" },
+        { name: t("HomePage.navBar.trading.energies"), href: "/trading/energies" },
       ],
     },
-    { name: "Open Live Account", href: "/account", id: "account" },
-    { name: "MT4 / MT5 Trading Platform", href: "/platform", id: "platform" },
+    { name: t("HomePage.navBar.openAccount"), href: "/account", id: "account" },
+    { name: t("HomePage.navBar.platform"), href: "/platform", id: "platform" },
   ];
   // Function to detect scroll
   useEffect(() => {

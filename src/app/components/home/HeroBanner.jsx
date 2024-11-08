@@ -1,6 +1,8 @@
 'use client'
+import { useLanguage } from "@/shared";
 import Image from "next/image";
 import { useState, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -20,40 +22,29 @@ const responsive = {
 };
 
 const HeroBanner = () => {
+  const { t } = useTranslation();
+  const [{ direction }] = useLanguage()
+
   const slides = [
     {
       img: "/03.png",
-      heading: `Maximize Your <br /> Forex Trading Potential`,
-      para: `
-         <ul class="space-y-2 mt-6 text-lg">
-              <li class="flex justify-center md:justify-start items-center">
-                <span class="w-2 h-2 bg-white rounded-full mr-2"></span>
-                Leverage up to 500:1
-              </li>
-              <li class="flex justify-center md:justify-start items-center">
-                <span class="w-2 h-2 bg-white rounded-full mr-2"></span>
-                Instant & Fast Execution
-              </li>
-              <li class="flex justify-center md:justify-start items-center">
-                <span class="w-2 h-2 bg-white rounded-full mr-2"></span>
-                Negative Balance Protection
-              </li>
-            </ul>`
+      heading: t("HomePage.slides.slideOneTitle"),
+      para: t("HomePage.slides.slideOnePara"),
     },
     {
       img: "/banner2.webp",
-      heading: "STOCK TRADING:",
-      heading2: `<h1 class="text-2xl">Grow Your Investments</h1>`,
+      heading: t("HomePage.slides.slideTwoTitle"),
+      heading2: t("HomePage.slides.slideTwoTitle2"),
     },
     {
       img: "/banner3.webp",
-      heading: "INDICES TRADING",
-      heading2: `<h1 class="text-2xl">Trade The world's Market</h1>`,
+      heading: t("HomePage.slides.slideThreeTitle"),
+      heading2: t("HomePage.slides.slideThreeTitle2"),
     },
     {
       img: "/banner4.webp",
-      heading: "ENERGY TRADING",
-      heading2: `<h1 class="text-2xl">Power Your Portfolio with<br/> Dynamic Opportunities<h1>`
+      heading: t("HomePage.slides.slideFourTitle"),
+      heading2: t("HomePage.slides.slideFourTitle2"),
     },
   ];
 
@@ -93,8 +84,8 @@ const HeroBanner = () => {
         }}
       >
         {slides.map((single, index) => (
-          <div key={index} className="container relative z-10 grid gap-4 md:grid-cols-2 grid-cols-1 items-center justify-between min-h-[450px]">
-            <div className="text-center md:text-left    order-2 md:order-1  ">
+          <div dir={direction} key={index} className="container relative z-10 grid gap-4 md:grid-cols-2 grid-cols-1 items-center justify-between min-h-[450px]">
+            <div className="text-center ltr:text-left rtl:text-right    order-2 md:order-1  ">
               <h1 className="md:text-4xl mb-2 text-2xl font-bold leading-snug"
                 dangerouslySetInnerHTML={{ __html: single?.heading }}
               />
@@ -103,7 +94,7 @@ const HeroBanner = () => {
               <div className="md:!mb-16 !mb-4" dangerouslySetInnerHTML={{ __html: single?.heading2 }} />
 
               <button className="bg-secondary text-white py-1 px-10 rounded-lg font-medium hover:bg-secondary transition duration-300">
-                Get started
+                {t("common.gettingStarted")}
               </button>
             </div>
             <div className="relative order-1 md:order-2 bg-no-repeat bg-contain bg-[url('/home-hero-bg.png')]"

@@ -1,26 +1,222 @@
 {
   "HomePage": {
-    "title": "Hello world!"
-  },
-  "topBar": {
-    "memberLogin": "Member login",
-    "openAccount": "OPEN AN ACCOUNT"
-  },
-  "navBar": {
-    "home": "Home",
-    "aboutUs": {
-      "about": "About Us",
-      "aboutEast": "About the East trade",
-      "whyUs": "Why Us",
-      "contactUs": "Contact US"
+    "title": "Hello world!",
+    "topBar": {
+      "memberLogin": "Member login",
+      "openAccount": "OPEN AN ACCOUNT"
     },
-    "trading": {
-      "trading": "Trading",
-      "forex": "Forex Trading",
-      "matel": "Precious Metals",
-      "stock": "Stock CFDs",
-      "equity": "Equity Indices",
-      "energies": "Energies"
+    "navBar": {
+      "home": "Home",
+      "aboutUs": {
+        "about": "About Us",
+        "aboutEast": "About the East trade",
+        "whyUs": "Why Us",
+        "contactUs": "Contact US"
+      },
+      "trading": {
+        "trading": "Trading",
+        "forex": "Forex Trading",
+        "matel": "Precious Metals",
+        "stock": "Stock CFDs",
+        "equity": "Equity Indices",
+        "energies": "Energies"
+      },
+      "openAccount": "Open Live Account",
+      "platform": "MT4 / MT5 Trading Platform"
+    },
+    "slides": {
+      "slideOneTitle": "Maximize Your <br /> Forex Trading Potential",
+      "slideOnePara": "<ul class=\"space-y-2 mt-6 text-lg\"><li class=\"flex justify-center md:justify-start items-center\"><span class=\"w-2 h-2 bg-white rounded-full mr-2\"></span>Leverage up to 500:1</li><li class=\"flex justify-center md:justify-start items-center\"><span class=\"w-2 h-2 bg-white rounded-full mr-2\"></span>Instant & Fast Execution</li><li class=\"flex justify-center md:justify-start items-center\"><span class=\"w-2 h-2 bg-white rounded-full mr-2\"></span>Negative Balance Protection</li></ul>",
+      "slideTwoTitle": "STOCK TRADING:",
+      "slideTwoTitle2": "<h1 class=\"text-2xl\">Grow Your Investments</h1>",
+      "slideThreeTitle": "INDICES TRADING",
+      "slideThreeTitle2": "<h1 class=\"text-2xl\">Trade The world's Market</h1>",
+      "slideFourTitle": "ENERGY TRADING",
+      "slideFourTitle2": "<h1 class=\"text-2xl\">Power Your Portfolio with<br/> Dynamic Opportunities</h1>"
+    },
+    "investSection": {
+      "title": "Invest with the World’s Leading Online Trading Platform",
+      "para": "Access over 27,000 financial instruments on the most reliable platform available. Our MetaTrader platform ensures stable performance and competitive spreads, giving you the advantage you need to make the most of every trade.",
+      "card1": "24/7 Customer Support",
+      "card2": "Tailored Solutions for Every Business",
+      "card3": "Trusted Global Partners",
+      "card4": "100% Secure Transactions",
+      "card5": "Fast & Transparent Processes"
+    },
+    "tradeSection": {
+      "title": "Trade and Invest Across 8 Markets with Access to 27,000+",
+      "option1": "Forex Trading",
+      "option2": "Stock Trading",
+      "option3": "Indices Trading",
+      "option4": "Energy Trading",
+      "cards": {
+        "card1": {
+          "title": "Forex Trading",
+          "para": "All global currency pairs"
+        },
+        "card2": {
+          "title": "Stocks",
+          "para": "Over 600 companies"
+        },
+        "card3": {
+          "title": "Equity Indices",
+          "para": "Major global indices"
+        },
+        "card4": {
+          "title": "CFDs on Energy",
+          "para": "Oil, Gas & all major energies"
+        }
+      }
+    },
+    "platformSection": {
+      "title": "Powerful",
+      "title2": " Trading Platform",
+      "mt4": "MetaTrader 4",
+      "mt5": "MetaTrader 5",
+      "desc": "Powered by GTCFX",
+      "mt4Para": "Established as the industry standard, it contains everything a trader needs. It offers many features like advanced technical analysis, flexible trading systems, Expert Advisors, as well as a mobile app."
+    },
+    "downloadApp": {
+      "mt4PlatformPage": {
+        "metaData": {
+          "title": "MetaTrader 4 Platform ► Download MT4 for Windows, Mac, iOS and Android | GTC FX",
+          "des": "Download the Metatrader 4 (MT4) for Windows, Mac, iOS and Android by GTC FX 📈 Trade a variety of CFDs on Forex, Stock Indices, Commodities, Bonds, and Cryptocurrencies with GTC FX's Meta Trader 4. Open an MT4 account now!"
+        },
+        "bannerText": {
+          "heading": "MT4 Trading Platform",
+          "para1": "MetaTrader 4, often referred to as MT4, is a widely used and highly popular trading platform in the world of forex (foreign exchange) trading.",
+          "para2": "It was developed by Meta Quotes Software and has become a standard choice for both novice and experienced traders.",
+          "trade": {
+            "heading1": "Trade With The Most",
+            "heading2": "Comprehensive Trading Platform",
+            "btnText": "Open Live Account"
+          }
+        },
+        "advantages": {
+          "title": "OUR MT4 TRADING PLATFORM ADVANTAGES",
+          "column1": {
+            "heading1": "User-Friendly Interface",
+            "heading2": "Accessible to traders of all levels of experience.",
+            "heading3": "Fast Execution",
+            "heading4": "Efficiency and depth of features.",
+            "heading5": "MT4 provides an extensive set of technical analysis tools",
+            "heading6": "This allows traders to analyze price movements and make informed trading decisions.",
+            "heading7": "Automated Trading through Expert Advisors (EAs)",
+            "heading8": "Custom Indicators and Scripts"
+          },
+          "column2": {
+            "heading1": "Backtesting trading strategies",
+            "heading2": "One-Click Trading",
+            "heading3": "Mobile Trading",
+            "heading4": "Real-Time Quotes and News",
+            "heading5": "Community and Support",
+            "heading6": "Secure",
+            "heading7": "Multiple Order Types",
+            "heading8": "Multiple Asset Classes"
+          }
+        }
+      },
+      "mt5PlatformPage": {
+        "metaData": {
+          "title": "MetaTrader 5 Platform ► Download MT5 for Windows, Mac, iOS and Android | GTC FX",
+          "des": "Download the Metatrader 5 (MT5) for Windows, Mac, iOS and Android by GTC FX 📈 Trade a variety of CFDs on Forex, Stock Indices, Commodities, Bonds, and Cryptocurrencies with GTC FX's Meta Trader 4. Open an MT4 account now!"
+        },
+        "bannerText": {
+          "heading": "MT5 Trading Platform",
+          "para1": "MetaTrader 5, often referred to as MT5, is a widely used and highly popular trading platform in the world of forex (foreign exchange) trading.",
+          "para2": "It was developed by Meta Quotes Software and has become a standard choice for both novice and experienced traders.",
+          "trade": {
+            "heading1": "Trade With The Most",
+            "heading2": "Comprehensive Trading Platform",
+            "btnText": "Open Live Account"
+          }
+        },
+        "advantages": {
+          "title": "OUR MT5 TRADING PLATFORM ADVANTAGES",
+          "column1": {
+            "heading1": "User-Friendly Interface",
+            "heading2": "Accessible to traders of all levels of experience.",
+            "heading3": "Fast Execution",
+            "heading4": "Efficiency and depth of features.",
+            "heading5": "MT4 provides an extensive set of technical analysis tools",
+            "heading6": "This allows traders to analyze price movements and make informed trading decisions.",
+            "heading7": "Automated Trading through Expert Advisors (EAs)",
+            "heading8": "Custom Indicators and Scripts"
+          },
+          "column2": {
+            "heading1": "Backtesting trading strategies",
+            "heading2": "One-Click Trading",
+            "heading3": "Mobile Trading",
+            "heading4": "Real-Time Quotes and News",
+            "heading5": "Community and Support",
+            "heading6": "Secure",
+            "heading7": "Multiple Order Types",
+            "heading8": "Multiple Asset Classes"
+          }
+        }
+      },
+      "downloadApp": {
+        "heading": "Trade Anywhere, Anytime!",
+        "para": "Easily access our intuitive platforms from your preferred device and trade seamlessly in global markets, anytime, anywhere! ",
+        "para1": "We provide a user-friendly interface and a diverse array of features tailored to meet the needs of traders in the global markets.",
+        "para2": "Access our user-friendly platforms from your mobile, tablet, or desktop effortlessly and enjoy seamless trading across global markets, wherever you are! ",
+        "GTCAPP": {
+          "title": "GTC APP",
+          "downloadnow": "Download Now!",
+          "para1": "MT4 & MT5, cTrader Compatible",
+          "para2": "Trade on the go with the new all-in-one GTC App. Available all MT4/MT5 & cTrader on following play store."
+        },
+        "mac": {
+          "title": "PC / MAC",
+          "mt4pc": "MT4 for PC",
+          "mt5pc": "MT5 for PC",
+          "mt4mac": "MT5 for PC",
+          "mt5mac": "MT5 for Mac",
+          "mt4multi": "cTrader for PC",
+          "live1": "Live link of MT4",
+          "live2": "Live link of MT5"
+        },
+        "smartPhone": {
+          "title": "SMARTPHONES",
+          "mt4andriod": "MT4 for Android",
+          "mt4iphone": "MT4 for iPhone",
+          "mt5andriod": "MT5 for Android",
+          "mt5iphone": "MT5 for iPhone",
+          "ctradeAndriod": "cTrader for Android",
+          "ctradeIpad": "cTrader for iPad"
+        },
+        "tablets": {
+          "title": "APK File",
+          "mt4andriod": "MT4 for Android",
+          "mt4ipad": "MT5 for Android",
+          "mt5andriod": "cTrader for Android",
+          "mt5ipad": "MT5 for iPad",
+          "ctradeAndriod": "cTrader for Android",
+          "ctradeIpad": "cTrader for iPad"
+        }
+      }
+    },
+    "cdfds": {
+      "title": "CFDs on"
+    },
+    "getingStarted": {
+      "title": "Ready to get started",
+      "para": "Start trading in 3 easy steps",
+      "step1": {
+        "title": "Register",
+        "para": "Apply for a Live Account in less than 2 minutes"
+      },
+      "step2": {
+        "title": "Deposit funds",
+        "para": "Fund your account via your chosen method"
+      },
+      "step3": {
+        "title": "Trade",
+        "para": "Start trading with a reliable broker"
+      }
     }
+  },
+  "common": {
+    "gettingStarted": "Get started"
   }
 }

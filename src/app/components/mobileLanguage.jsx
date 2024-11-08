@@ -1,28 +1,36 @@
 import { Fragment, useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
- import { useDetectClickOutside } from "react-detect-click-outside";
- import { RxCross2 } from "react-icons/rx";
+import { useDetectClickOutside } from "react-detect-click-outside";
+import { RxCross2 } from "react-icons/rx";
 import Image from "next/image";
 import { FaAngleDown } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useLanguage } from "@/shared";
+import { useTranslation } from "react-i18next";
 
 export default function LanguageMobile(props) {
     const pathname = usePathname();
     const [{ code }] = useLanguage();
+    const { i18n, t } = useTranslation();
 
     const pathnameWithoutLocale = pathname.replace(`/${code}`, "");
     const [open, setOpen] = useState(false);
-     const ref = useDetectClickOutside({
+    const ref = useDetectClickOutside({
         onTriggered: () => {
             setOpen(false);
         },
     });
     const languages = [
         { code: "en", label: "English", flagSrc: "/en.webp" },
-        { code: "ar-AE", label: "العربية", flagSrc: "/ar.webp" },        // Add more languages as needed
+        { code: "ar", label: "العربية", flagSrc: "/ar.webp" },        // Add more languages as needed
     ];
+
+    const handleLanguageChange = (code) => {
+        i18n.changeLanguage(code);
+        localStorage.setItem("i18nextLng", code)
+        setDropdownOpen(false)
+    };
     return (
         <Popover className="" ref={ref}>
             <Popover.Button
@@ -72,11 +80,10 @@ export default function LanguageMobile(props) {
                     <ul className=" p-0 text-accent">
                         {languages.map((language) => (
                             <li key={language.code} className="p-2 border-b">
-                                <Link
-                                    href={
-                                        pathnameWithoutLocale === "" ? "/" : pathnameWithoutLocale
-                                    }
-                                    locale={language.code}
+                                <div
+                                    onClick={() => {
+                                        handleLanguageChange(language?.code)
+                                    }}
                                     className="flex gap-2  items-center"
                                 >
                                     <div>
@@ -88,7 +95,7 @@ export default function LanguageMobile(props) {
                                         />
                                     </div>
                                     <span>{language.label}</span>
-                                </Link>
+                                </div>
                             </li>
                         ))}
                     </ul>

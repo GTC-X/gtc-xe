@@ -13,7 +13,7 @@ const Language = (props) => {
   const pathname = usePathname();
   const { i18n, t } = useTranslation();
   const router = useRouter();
-  const [{ direction, code }] = useLanguage();
+  const [{ code }] = useLanguage();
 
   // const pathnameWithoutLocale = pathname.replace(`/${locale}`, "");
   const [dropdownOpen, setDropdownOpen] = useState(false);
