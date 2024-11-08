@@ -117,7 +117,7 @@ export default function Markets() {
         <>
             <section className="md:py-16  py-8 container  h-[750px]">
                 <div className="text-center">
-                    <h2 className="text-3xl font-semibold text-primary mb-4">
+                    <h2 className="text-xl md:text-3xl font-medium capitalize text-primary mb-4">
                         {t("HomePage.cdfds.title")}
                     </h2>
                 </div>

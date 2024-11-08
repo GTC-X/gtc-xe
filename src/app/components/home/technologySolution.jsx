@@ -62,7 +62,7 @@ const DownloadSection = () => {
                             {t("HomePage.downloadApp.GTCAPP.title")}
                         </h4>
                         <div className="inside-content py-3">
-                            <h3 className="text-base text-secondary leading-9">
+                            <h3 className="text-xl text-secondary leading-9">
                             {t("HomePage.downloadApp.GTCAPP.downloadnow")}
                             </h3>
                             <p className="text-xs  text-white"> {t("HomePage.downloadApp.GTCAPP.para2")}</p>
@@ -136,7 +136,7 @@ const DownloadSection = () => {
                                     {t("HomePage.downloadApp.tablets.title")}
                                 </h4>
                                 <div className="inside-content py-3">
-                                    <ul className="leading-7 text-sm gap-4">
+                                    <ul className="leading-7 text-sm gap-4"> 
                                         {downloadOptions.map((option, index) => (
                                             <li key={index} className="border-b border-secondary border-opacity-50 text text-left text-white">
                                                 <Link className="flex text-sm flex-row gap-3 items-center py-3" href={option.link}>

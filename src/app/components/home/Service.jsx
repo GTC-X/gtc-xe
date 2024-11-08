@@ -48,7 +48,7 @@ const Service = () => {
         },
     ];
     return (
-        <div className="container py-14 ">
+        <div className="container pt-10 md:pt-12 2xl:pt-16">
             <div className=" text-center">
                 {/* Title and Description */}
                 <h2 className="text-xl md:text-3xl font-medium text-secondary mb-4">

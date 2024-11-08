@@ -6,9 +6,10 @@ const GetStartedSection = () => {
     const { t } = useTranslation();
 
     return (
-        <div className="container py-16 px-4 text-center">
+        <section className='bg-gray-100  py-16 px-4 text-center mt-12'>
+        <div className="container">
             {/* Title and Subtitle */}
-            <h2 className="text-2xl font-semibold text-black mb-2">{t("HomePage.getingStarted.title")}</h2>
+            <h2 className="text-xl md:text-3xl font-medium capitalize text-black mb-2">{t("HomePage.getingStarted.title")}</h2>
             <p className="  mb-10">{t("HomePage.getingStarted.para")}</p>
 
             {/* Steps */}
@@ -40,6 +41,7 @@ const GetStartedSection = () => {
                 {t("common.gettingStarted")}
             </button>
         </div>
+        </section>
     );
 };
 
