@@ -155,45 +155,43 @@
           }
         }
       },
-      "downloadApp": {
-        "heading": "Trade Anywhere, Anytime!",
-        "para": "Easily access our intuitive platforms from your preferred device and trade seamlessly in global markets, anytime, anywhere! ",
-        "para1": "We provide a user-friendly interface and a diverse array of features tailored to meet the needs of traders in the global markets.",
-        "para2": "Access our user-friendly platforms from your mobile, tablet, or desktop effortlessly and enjoy seamless trading across global markets, wherever you are! ",
-        "GTCAPP": {
-          "title": "GTC APP",
-          "downloadnow": "Download Now!",
-          "para1": "MT4 & MT5, cTrader Compatible",
-          "para2": "Trade on the go with the new all-in-one GTC App. Available all MT4/MT5 & cTrader on following play store."
-        },
-        "mac": {
-          "title": "PC / MAC",
-          "mt4pc": "MT4 for PC",
-          "mt5pc": "MT5 for PC",
-          "mt4mac": "MT5 for PC",
-          "mt5mac": "MT5 for Mac",
-          "mt4multi": "cTrader for PC",
-          "live1": "Live link of MT4",
-          "live2": "Live link of MT5"
-        },
-        "smartPhone": {
-          "title": "SMARTPHONES",
-          "mt4andriod": "MT4 for Android",
-          "mt4iphone": "MT4 for iPhone",
-          "mt5andriod": "MT5 for Android",
-          "mt5iphone": "MT5 for iPhone",
-          "ctradeAndriod": "cTrader for Android",
-          "ctradeIpad": "cTrader for iPad"
-        },
-        "tablets": {
-          "title": "APK File",
-          "mt4andriod": "MT4 for Android",
-          "mt4ipad": "MT5 for Android",
-          "mt5andriod": "cTrader for Android",
-          "mt5ipad": "MT5 for iPad",
-          "ctradeAndriod": "cTrader for Android",
-          "ctradeIpad": "cTrader for iPad"
-        }
+      "heading": "Trade Anywhere, Anytime!",
+      "para": "Easily access our intuitive platforms from your preferred device and trade seamlessly in global markets, anytime, anywhere! ",
+      "para1": "We provide a user-friendly interface and a diverse array of features tailored to meet the needs of traders in the global markets.",
+      "para2": "Access our user-friendly platforms from your mobile, tablet, or desktop effortlessly and enjoy seamless trading across global markets, wherever you are! ",
+      "GTCAPP": {
+        "title": "GTC APP",
+        "downloadnow": "Download Now!",
+        "para1": "MT4 & MT5, cTrader Compatible",
+        "para2": "Trade on the go with the new all-in-one GTC App. Available all MT4/MT5 & cTrader on following play store."
+      },
+      "mac": {
+        "title": "PC / MAC",
+        "mt4pc": "MT4 for PC",
+        "mt5pc": "MT5 for PC",
+        "mt4mac": "MT5 for PC",
+        "mt5mac": "MT5 for Mac",
+        "mt4multi": "cTrader for PC",
+        "live1": "Live link of MT4",
+        "live2": "Live link of MT5"
+      },
+      "smartPhone": {
+        "title": "SMARTPHONES",
+        "mt4andriod": "MT4 for Android",
+        "mt4iphone": "MT4 for iPhone",
+        "mt5andriod": "MT5 for Android",
+        "mt5iphone": "MT5 for iPhone",
+        "ctradeAndriod": "cTrader for Android",
+        "ctradeIpad": "cTrader for iPad"
+      },
+      "tablets": {
+        "title": "APK File",
+        "mt4andriod": "MT4 for Android",
+        "mt4ipad": "MT5 for Android",
+        "mt5andriod": "cTrader for Android",
+        "mt5ipad": "MT5 for iPad",
+        "ctradeAndriod": "cTrader for Android",
+        "ctradeIpad": "cTrader for iPad"
       }
     },
     "cdfds": {
