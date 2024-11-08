@@ -85,12 +85,12 @@ const HeroBanner = () => {
       >
         {slides.map((single, index) => (
           <div dir={direction} key={index} className="container relative z-10 grid gap-4 md:grid-cols-2 grid-cols-1 items-center justify-between min-h-[450px]">
-            <div className="text-center ltr:text-left rtl:text-right    order-2 md:order-1  ">
+            <div className=" ltr:text-left rtl:text-right    order-2 md:order-1  ">
               <h1 className="md:text-4xl mb-2 text-2xl font-bold leading-snug"
                 dangerouslySetInnerHTML={{ __html: single?.heading }}
               />
 
-              <div dangerouslySetInnerHTML={{ __html: single?.para }} />
+              <div className="text-left rtl:text-right" dangerouslySetInnerHTML={{ __html: single?.para }} />
               <div className="md:!mb-16 !mb-4" dangerouslySetInnerHTML={{ __html: single?.heading2 }} />
 
               <button className="bg-secondary text-white py-1 px-10 rounded-lg font-medium hover:bg-secondary transition duration-300">
