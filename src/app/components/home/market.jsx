@@ -1,8 +1,11 @@
 'use client'
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Markets() {
     const widgetRef = useRef(null);
+    const { t } = useTranslation();
+
 
     useEffect(() => {
         if (widgetRef.current) {
@@ -115,7 +118,7 @@ export default function Markets() {
             <section className="md:py-16  py-8 container  h-[750px]">
                 <div className="text-center">
                     <h2 className="text-3xl font-semibold text-primary mb-4">
-                        CFDs on
+                        {t("HomePage.cdfds.title")}
                     </h2>
                 </div>
 
