@@ -214,6 +214,26 @@
       }
     }
   },
+  "aboutUs": {
+    "aboutEast": {
+      "heading": "About Us",
+      "desc": "Discover The East Trade – Your Global Financial Partner",
+      "subHeading": "EXPERTISE  |  RELIABILITY  |  INNOVATION",
+      "section1": {
+        "heading": "EXPERTISE",
+        "para1": "At The East Trade, we are recognized as a global leader in financial derivatives. With over a decade of experience, we have built a reputation for excellence in delivering premium financial services.",
+        "para2": "Our broad portfolio of products and services highlights our financial strength and commitment to providing world-class support to a growing client base of more than 180,000 customers worldwide. We take pride in serving partners and clients across over 25 countries."
+      },
+      "section2": {
+        "heading": "RELIABILITY",
+        "para1": "We are dedicated to maintaining trust through consistent growth and customer-centric solutions. Our focus on delivering high-quality financial derivatives services ensures that we remain a reliable partner for clients seeking outstanding trading experiences. Discover our wide range of offerings and see why we continue to lead the industry."
+      },
+      "section3": {
+        "heading": "INNOVATION",
+        "para1": "Since our inception, we have been innovators, consistently setting benchmarks in the financial sector. Our journey has been marked by the creation of cutting-edge products, services, and trading platforms that elevate industry standards and empower our clients to thrive in dynamic markets."
+      }
+    }
+  },
   "common": {
     "gettingStarted": "Get started"
   }

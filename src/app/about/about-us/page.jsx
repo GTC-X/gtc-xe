@@ -1,15 +1,18 @@
+'use client'
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const AboutUs = () => {
+    const { t } = useTranslation()
     return (
         <div className=' bg-white'>
             <div className="container mx-auto">
                 {/* Logo and Header */}
                 <div className=' grid md:grid-cols-2 grid-cols-1 min-h-96 items-center gap-2'>
                     <div className="flex flex-col  order-2 md:order-1 ">
-                        <h1 className="text-3xl font-bold mt-2">About Us</h1>
-                        <p className="text-sm">Discover The East Trade – Your Global Financial Partner</p>
-                        <p className="text-lg font-semibold mt-2">EXPERTISE &nbsp;|&nbsp; RELIABILITY&nbsp; |&nbsp; INNOVATION</p>
+                        <h1 className="text-3xl font-bold mt-2">{t("aboutUs.aboutEast.heading")}</h1>
+                        <p className="text-sm">{t("aboutUs.aboutEast.desc")}</p>
+                        <p className="text-lg font-semibold mt-2">{t("aboutUs.aboutEast.subHeading")}</p>
                     </div>
 
                     {/* Globe Image */}
@@ -27,37 +30,37 @@ const AboutUs = () => {
                 <div className="pt-8 pb-20 space-y-10">
                     {/* Expertise Section */}
                     <div className="flex flex-col  ">
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center gap-2">
                             <img src="/about-icon1.jpg" alt="Expertise Icon" className="h-8" />
-                            <h2 className="text-lg font-semibold  ">EXPERTISE</h2>
+                            <h2 className="text-lg font-semibold  ">{t("aboutUs.aboutEast.section1.heading")}</h2>
                         </div>
                         <p className="mt-4   ">
-                            At The East Trade, we are recognized as a global leader in financial derivatives. With over a decade of experience, we have built a reputation for excellence in delivering premium financial services.
+                            {t("aboutUs.aboutEast.section1.para1")}
                         </p>
                         <p className="mt-2   ">
-                            Our broad portfolio of products and services highlights our financial strength and commitment to providing world-class support to a growing client base of more than 180,000 customers worldwide. We take pride in serving partners and clients across over 25 countries.
+                            {t("aboutUs.aboutEast.section1.para2")}
                         </p>
                     </div>
 
                     {/* Reliability Section */}
                     <div className="flex flex-col  ">
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center gap-2">
                             <img src="/about-icon2.jpg" alt="Reliability Icon" className="h-8" />
-                            <h2 className="text-lg font-semibold  ">RELIABILITY</h2>
+                            <h2 className="text-lg font-semibold  ">{t("aboutUs.aboutEast.section2.heading")}</h2>
                         </div>
                         <p className="mt-4  ">
-                            We are dedicated to maintaining trust through consistent growth and customer-centric solutions. Our focus on delivering high-quality financial derivatives services ensures that we remain a reliable partner for clients seeking outstanding trading experiences. Discover our wide range of offerings and see why we continue to lead the industry.
+                            {t("aboutUs.aboutEast.section2.para1")}
                         </p>
                     </div>
 
                     {/* Innovation Section */}
                     <div className="flex flex-col  ">
-                        <div className="flex items-center space-x-2">
+                        <div className="flex items-center gap-2">
                             <img src="/about-icon3.jpg" alt="Innovation Icon" className="h-8" />
-                            <h2 className="text-lg font-semibold  ">INNOVATION</h2>
+                            <h2 className="text-lg font-semibold  ">{t("aboutUs.aboutEast.section3.heading")}</h2>
                         </div>
                         <p className="mt-4  ">
-                            Since our inception, we have been innovators, consistently setting benchmarks in the financial sector. Our journey has been marked by the creation of cutting-edge products, services, and trading platforms that elevate industry standards and empower our clients to thrive in dynamic markets.
+                            {t("aboutUs.aboutEast.section3.para1")}
                         </p>
                     </div>
                 </div>
