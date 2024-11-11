@@ -232,9 +232,185 @@
         "heading": "INNOVATION",
         "para1": "Since our inception, we have been innovators, consistently setting benchmarks in the financial sector. Our journey has been marked by the creation of cutting-edge products, services, and trading platforms that elevate industry standards and empower our clients to thrive in dynamic markets."
       }
+    },
+    "whyUs": {
+      "section1": {
+        "title": "Why Choose The East Trade?",
+        "subTitle": "<span class=\" font-medium\">Unlock Profitable Opportunities: </span> Start Your Best Investment Journey with Us",
+        "para1": "Trading with <span class=\"font-semibold\">The East Trade</span> offers the ideal path to invest your capital wisely and profitably. Our platform ensures a secure and efficient trading environment, leveraging advanced technology and expert support to back your investment decisions.",
+        "para2": " With our commitment to providing an exceptional trading experience, we empower you to navigate financial markets with ease and confidence.  Make well-informed decisions that can pave the way to attractive returns. Join us today to unlock your potential for financial growth and achieve success on your investment journey."
+      },
+      "section2": {
+        "title": "<span class=\"font-semibold \">Trade </span> with the <span class=\"text-blue-600 font-semibold\">Best Broker</span>",
+        "subTitle": " <p class=\"text-lg\">Enjoy the <span class=\"font-semibold\">Ultimate Trading Experience</span> with <span class=\"font-semibold\">Industry-Leading Features:</span></p>",
+        "options": [
+          "Tightest Spreads in the market for maximum profitability",
+          "Most Stable Trading Platforms for uninterrupted trading",
+          "Competitive Rebates & Commissions tailored to your needs",
+          "Secure, Instant, and Fast Execution for seamless transactions",
+          "MT4 / MT5 Trading Platforms with advanced features",
+          "Access to 7 Markets with over 27,000 trading instruments",
+          "Leverage up to 500:1 to maximize your trading potential",
+          "Negative Balance Protection for risk management",
+          "No Restrictions on EA (Expert Advisors) usage",
+          "No Price Slippage to ensure precise trading",
+          "No Commissions, Requotes, or Rejections"
+        ]
+      },
+      "section3": {
+        "title": "<span class=\"font-semibold\">Cutting-Edge Technology</span> and <span class=\"font-semibold\">Direct Market Access:</span>",
+        "options": [
+          "Direct Access to Top-Tier Banks for superior pricing",
+          "No Dealing Desk Intervention for transparent execution",
+          "Tier 1 Liquidity Pricing for competitive rates",
+          "Real-Time Market Analysis to stay ahead",
+          "Instant and Fast Execution for optimal results"
+        ]
+      }
+    }
+  },
+  "trading": {
+    "forexPage": {
+      "title": "TRADE FOREX",
+      "para": "With a Tightest Spread Starting from 0 PIPS Offering Leverage upto 1:2000 & No restriction",
+      "footer": "Forex Trading Hours (Local = Server time zone, please note DST may apply) <br /> Monday - Friday: 00:05 - 23:50",
+      "cards": {
+        "card1": "Tightest Spread <br /> Starting from 0.0 Pips",
+        "card2": "Leverage <br /> Up to 1:2000",
+        "card3": "Instant and <br /> Fast Execution",
+        "card4": "Negative<br /> Balance Protection",
+        "card5": "No Trading<br /> Restrictions",
+        "card6": "No Requotes and<br /> Rejections"
+      },
+      "forexInfo": {
+        "section1": {
+          "title": "What is Forex Trading?",
+          "para1": "Forex trading, also known as foreign exchange or FX trading, involves the exchange of one currency for another with the goal of making a profit from changes in exchange rates. The forex market is among the largest and most liquid financial markets globally, allowing participants to trade various currency pairs, such as EUR/USD (Euro against US Dollar) or USD/JPY (US Dollar against Japanese Yen).",
+          "para2": "In forex trading, traders anticipate the movement of currency prices. They can take a long position, meaning they buy a currency pair hoping its value will rise, or a short position, meaning they sell a pair expecting its value to decline. Profits or losses arise from the difference between the bid (buy) and ask (sell) prices of the currency pairs involved."
+        },
+        "section2": {
+          "title": "How to Trade Forex",
+          "para1": "Forex traders rely on different approaches to analyze the market. One common method is technical analysis, which focuses on examining price charts and identifying patterns to predict future movements. Another approach is fundamental analysis, which evaluates economic, political, and financial events that may impact currency prices.",
+          "para2": "Managing risk effectively is essential in forex trading, as the market can be highly volatile. With leverage, traders can control large positions using only a small portion of capital, which amplifies both potential profits and losses. To succeed in forex trading, traders must develop a deep understanding of the market, implement sound trading strategies, and apply effective risk management practices."
+        },
+        "section3": {
+          "title": "Trade Forex with Us",
+          "para1": "Forex traders rely on different approaches to analyze the market. One common method is technical analysis, which focuses on examining price charts and identifying patterns to predict future movements. Another approach is fundamental analysis, which evaluates economic, political, and financial events that may impact currency prices.",
+          "para2": "Managing risk effectively is essential in forex trading, as the market can be highly volatile. With leverage, traders can control large positions using only a small portion of capital, which amplifies both potential profits and losses. To succeed in forex trading, traders must develop a deep understanding of the market, implement sound trading strategies, and apply effective risk management practices."
+        }
+      }
+    },
+    "metalPage": {
+      "title": "PRECIOUS METALS",
+      "para": "\"MAXIMIZE YOUR PROFIT POTENTIAL WITH OUT ULTRA-COMPETITIVE <b class=\"text-[#b58756]\">GOLD</b> SPREADS\"",
+      "footer": "<b>Silver & Gold Trading Hours<br/>(GMT + 2 time zone, please note DST may apply)</b><br/>Monday - Thursday : 01:05 - 23:55 <br/>Friday : 01:35 - 23:50",
+      "cards": {
+        "card1": "Tightest Spread on <b>Gold</b> <br /> Starting from 4 Cents",
+        "card2": "Leverage <br /> Up to 1000:1",
+        "card3": "Instant and <br /> Fast Execution",
+        "card4": "Negative<br /> Balance Protection",
+        "card5": "Trade <b>Gold</b> & <b>Silver</b><br /> with No Requotes",
+        "card6": "No Rejections"
+      },
+      "metalInfo": {
+        "section1": {
+          "title": "What is <span class=\"text-[#b58756]\">Metals</span> Trading?",
+          "para1": "<b>Metals </b> trading involves the exchange of different types of metals within the financial markets. This includes precious metals such as <b>gold, silver, platinum,</b> and <b>palladium,</b> which are sought after for their intrinsic value and are used as safe-haven assets. Base metals like <b>copper, aluminum, </b> and <b> steel,</b> which are essential for various industries and economic activities, are also traded."
+        },
+        "section2": {
+          "title": "How to Trade <span class=\"text-[#b58756]\">Metals</span>?",
+          "subTitle": "Forms of Metals Trading",
+          "para1": "Spot Trading: <br /></span> Spot trading involves the immediate purchase or sale of physical metals at the current market price. This type of trading is popular among those who wish to own metals for personal use or investment purposes. Some traders capitalize on fluctuations in price to buy at a low price and sell at a higher price for short-term profits.",
+          "para2": "<span class=\"font-semibold\">Futures & Options Trading:<br /></span> Futures and options allow traders to speculate on the future prices of metals without the need to own the physical asset. This approach enables traders to use leverage as a way to manage risk and maximize potential returns. Futures contracts obligate traders to buy or sell a specified amount of metals at a predetermined price in the future, widely used in industrial metal markets to hedge against potential price fluctuations."
+        }
+      }
+    },
+    "stockPage": {
+      "title": "STOCK CFDs",
+      "para": "\"Our platform offers a <b>profitable edge,</b> enabling you to capitalize on both rising and falling stock prices during market volatility.\"",
+      "footer": "<b>Trading Hours<br/>(GMT + 2 time zone, please note DST may apply)</b><br/>Monday - Friday: 00:05 - 23:50",
+      "cards": {
+        "card1": "TIGHTEST SPREADS",
+        "card2": "ZERO COMMISSION",
+        "card3": "LOWEST MARGIN <br /> ON ALL COMMODITIES",
+        "card4": "SWAP FREE"
+      },
+      "stockInfo": {
+        "section1": {
+          "title": " WHAT IS <span class=\"text-secondary\">STOCK CFDs</span> TRADING?",
+          "para1": "<strong>Stock CFD (Contract for Difference)</strong> trading allows investors to speculate on the price movements of stocks without actually owning the underlying shares. Instead, traders enter into an agreement to exchange the difference in the stock's price between the opening and closing of the trade.",
+          "para2": "<strong>Dividend Adjustments for Stock CFDs</strong>",
+          "para3": "Since CFD traders do not own the underlying stocks, they are not  eligible for dividends directly. However, when a company pays dividends, it reduces the stock's value by the dividend amount, which is reflected in a lower share price when the market opens on the ex-dividend date.",
+          "para4": "To maintain the balance of CFD positions, a dividend adjustment is  made for clients holding relevant CFD positions. This ensures that  traders’ open positions are not negatively impacted by the drop in  the share price due to dividend payouts.",
+          "para5": "The trading hours for each stock CFD vary and can be found in the  table above."
+        },
+        "section2": {
+          "title": "<span class=\"text-secondary\">STOCK CFDs</span> TRADING WITH US:",
+          "para1": "Trading Stock CFDs with our company offers a range of benefits for  both investors and traders. It provides access to a broad selection  of stocks from international markets, making it easy to create a  diversified portfolio. Our competitive pricing and transparent fee  structure ensure that you can trade efficiently, without hidden  costs.",
+          "para2": "With leverage options, you can enhance your trading potential while  maintaining control over your risk exposure. Our platform also  provides in-depth research tools and access to expert trading tips,  giving you well-informed trading decisions.",
+          "para3": "We prioritize the safety of your investments by offering robust  client protection, including insurance for client funds, ensuring  you can trade confidently and securely.",
+          "para4": "Partnering with us for Stock CFD trading equips you with the  resources and support you need to achieve your financial objectives  with efficiency and confidence."
+        }
+      }
+    },
+    "indiciesPage": {
+      "title": "Equity Indices",
+      "para": "\"Unlock a world of profitable opportunities trading cash indices with us, offering the tools and market access for a rewarding experience.\"",
+      "cards": {
+        "card1": "ACCESS TO THE GLOBAL MARKETS",
+        "card2": "LOWEST MARGIN ON ALL EQUITY INDICIES",
+        "card3": "SWAP FREE*",
+        "card4": "DYNAMIC LEVERAGE",
+        "card5": "FAST EXECUTIONS"
+      },
+      "indiciesInfo": {
+        "section1": {
+          "title": "What is Equity Indices Trading?",
+          "para1": " <p class=\" text-justify\"> Equity indices trading involves speculating on the price movements of stock market indices, such as the S&P 500, NASDAQ 100, or FTSE 100. These indices represent the performance of a group of stocks, allowing traders the ability to invest in the overall market or specific sectors without buying individual shares.  </p>  <p class=\" text-justify\">  Dividend adjustments on Cash Indices Cash Index CFDs are subject to dividend adjustments. When a company listed within an index pays dividends, its share price decreases by the amount of the dividend on the ex-dividend date. To replicate this price change, dividend adjustments are applied to Cash Index CFDs to reflect these changes.  </p> <p class=\"text-justify\">To protect positions from the impact of dividend payments, dividend adjustments will be applied to the account of clients who hold index positions at 00:00 GMT+2, compensating partially for the price change on the ex-dividend date.</p>  <p>Dividend Adjustments on Long and Short Positions</p>",
+          "para2": "<p>  For long positions, dividend adjustments are credited to client accounts after deducting any applicable withholding taxes. The tax rate may vary depending on the specific underlying instrument. Short positions, however, are not subject to withholding tax deductions, so no such adjustments are applied.  </p>  <p>  Additionally, CFDs on Germany 40 (GER40Cash) are exempt from dividend adjustments. This is because the dividends of the constituent stocks are reinvested directly into the index, eliminating any dividend impact from withdrawals.  </p>  <p>Additional Information on Dividend Adjustments</p>  <p>  CFDs on Futures indices are not subject to dividend adjustments. This exemption exists because futures contracts are structured differently from cash indices and do not generate dividend income for the underlying assets.  </p>  <p>For Cash Index CFDs, dividend adjustments are applied as follows:</p>  <ul className=\"list-disc list-inside space-y-2 \">  <li>Buy Trades:<br /> Clients holding buy positions will receive a credit calculated using the following formula:<br /> Dividend Adjustment = Index Dividend Declared x Position Size (in lots)</li> </ul>"
+        },
+        "section2": {
+          "title": "What Are Equity Indices?",
+          "para1": "<div className=\" space-y-4\">  <p><strong>NASDAQ 100:</strong> <br /> The NASDAQ Composite is the main NASDAQ index, with the NASDAQ 100 consisting of 107 equity securities.</p>  <p><strong>DAX 40:</strong> <br /> The Deutscher Aktienindex, it represents the 40 major companies trading on the Frankfurt Stock Exchange.</p>  <p><strong>S&P 500:</strong> <br /> Standard & Poor's Standard & Poor's Financial Services, Inc. is a leading indicator of U.S. equities.</p>  <p><strong>ASX 200:</strong> <br /> The capitalization-weighted index of stocks listed on the Australian Securities Exchange.</p>  <p><strong>Nikkei 225:</strong> <br /> The Nikkei 225 is the stock index of the Tokyo Stock Exchange.</p>  <p><strong>Hang Seng:</strong> <br /> The Hang Seng Index tracks 50 major companies listed on the Hong Kong Stock Market.</p>  <p><strong>FTSE 100:</strong> <br /> Managed by the Times Stock Exchange 100 Index, it encompasses the top 100 companies by market capitalization listed on the London Stock Exchange.</p>  <p><strong>Dow Jones:</strong> <br /> The oldest stock index, U.S.-based, tracks the performance of 30 major American companies.</p>  <p><strong>CAC 40:</strong> <br /> The French CAC 40 index includes the top 40 values of the 100 highest market-capitalization company stocks traded on Euronext Paris.</p>  </div>"
+        }
+      }
+    },
+    "energiesPage": {
+      "title": "TRADE ENERGY",
+      "para": "\"Experience a competitive advantage when trading energy markets with us\"",
+      "cards": {
+        "card1": "High Volatility - Greater Movement",
+        "card2": "Trade Oil - The Most Actively Traded Commodity Worldwide",
+        "card3": "Go Short / Long According to Market Moves",
+        "card4": "Trade on a Margin",
+        "card5": "No Overnight Financing on Oil CFDs",
+        "card6": "No Extra Fees Applicable"
+      },
+      "energiesInfo": {
+        "section1": {
+          "title": " ENERGY TRADING SPREAD / CONDITION",
+          "desc": "List/Table of products and spread",
+          "subTitle": "WHAT IS <b >ENERGY TRADING?</b>",
+          "para1": "ENERGY TRADING INVOLVES THE BUYING AND SELLING OF ENERGY COMMODITIES, SUCH AS OIL,  NATURAL GAS, AND ELECTRICITY, IN FINANCIAL MARKETS. ENERGY MARKETS ARE HIGHLY  DYNAMIC AND INFLUENCED BY A COMBINATION OF GEOPOLITICAL, ENVIRONMENTAL, AND  ECONOMIC FACTORS. GLOBAL ECONOMIC ACTIVITY SIGNIFICANTLY AFFECTS ENERGY  DEMAND—BOOMING ECONOMIES DRIVE CONSUMPTION HIGHER, WHILE ECONOMIC  DOWNTURNS TEND TO LOWER IT.",
+          "para2": "EXTREME WEATHER CONDITIONS, SUCH AS HURRICANES OR COLD WINTERS, CAN DISRUPT THE  PRODUCTION AND SUPPLY CHAINS OF KEY ENERGY RESOURCES LIKE CRUDE OIL, NATURAL GAS,  AND HEATING OIL. THESE DISRUPTIONS CAN ALTER MARKET DYNAMICS AND IMPACT THE  DEMAND FOR RELATED CONSUMER SERVICES. ADDITIONALLY, GEOPOLITICAL STABILITY IN  MAJOR NATURAL GAS-PRODUCING REGIONS CAN HAVE A NOTABLE IMPACT ON GLOBAL  ENERGY PRICES.",
+          "para3": "OIL TRADING, IN PARTICULAR, OPERATES AROUND THE CLOCK DUE TO THE GLOBAL NATURE OF  THE MARKET, RESULTING IN CONSTANT FLUCTUATIONS IN PRICES. THIS VOLATILITY MAKES IT  APPEALING FOR DAY TRADERS WHO AIM TO CAPITALIZE ON RAPID PRICE MOVEMENTS,  ESPECIALLY WHEN TRADING OIL THROUGH CFDS, WHICH OFFER A SIMPLIFIED APPROACH TO  PARTICIPATING IN THE MARKET.",
+          "para4": "ACCESS TO REAL-TIME MARKET DATA, IN-DEPTH ANALYSIS, AND A WIDE RANGE OF TRADING  TOOLS EQUIPS TRADERS WITH THE INSIGHTS NEEDED TO MAKE WELL-INFORMED DECISIONS  AND TAKE ADVANTAGE OF EMERGING OPPORTUNITIES IN ENERGY MARKETS."
+        }
+      }
     }
   },
   "common": {
-    "gettingStarted": "Get started"
+    "gettingStarted": "Get started",
+    "cardTitle": "Our Trading Advantages",
+    "openLive": "Open Live Account"
+  },
+  "footer": {
+    "liveChat": "LIVE CHAT",
+    "document": "Legal Forms & Documents",
+    "risk": "Risk Warnings",
+    "cookies": "Cookies Policy",
+    "desc1": " <span class=\"font-semibold text-white\"> High Risk Investment Warning: </span> Contracts for Difference (CFDs) are complex financial products that are traded on margin. Trading CFDs carries a high degree of risk. It is possible to lose all your capital. These products may not be suitable for everyone and you should ensure that you understand the risks involved. Seek independent expert advice if necessary and speculate only with funds that you can afford to lose. Please think carefully whether such trading suits you, taking into consideration all the relevant circumstances as well as your personal resources. We do not recommend clients posting their entire account balance to meet margin requirements. Clients can minimise their level of exposure by requesting a change in leverage limit. For more information please refer to TETC’s Risk Disclosure.",
+    "desc2": "<span class=\"font-semibold text-white\">Disclaimer:</span> The content of this page is for information purposes only and it is not intended as a recommendation or advice. Any indication of past performance or simulated past performance included in advertisements published by TETC is not a reliable indicator of future results. The customer carries the sole responsibility for all the businesses or investments that are carried out at TETC.",
+    "desc3": "<span class=\"font-semibold text-white\">TETC</span> is authori and regulated under the <span class=\"font-semibold text-white\"> Dubai Financial Services Authority </span> with license number <span class=\"text-white\">F000000</span>."
   }
 }

@@ -1,41 +1,40 @@
+'use client'
+import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import EquityIndicesInfo from "./components/indiciesInfo";
 
-export const metadata = {
-    title: '',
-    description: '',
-}
-
 export default function EquityIndicies() {
+    const { t } = useTranslation()
+
     const cardData = [
         {
-            title: `ACCESS TO THE GLOBAL MARKETS`,
+            title: t('trading.indiciesPage.cards.card1'),
             icon: "/indicies-icon1.webp"
         },
         {
-            title: `LOWEST MARGIN ON ALL EQUITY INDICIES`,
+            title: t('trading.indiciesPage.cards.card2'),
             icon: "/indicies-icon2.webp"
         },
         {
-            title: `SWAP FREE*`,
+            title: t('trading.indiciesPage.cards.card3'),
             icon: "/indicies-icon3.webp"
         },
         {
-            title: `DYNAMIC LEVERAGE`,
+            title: t('trading.indiciesPage.cards.card4'),
             icon: "/indicies-icon4.webp"
         },
         {
-            title: `FAST EXECUTIONS`,
+            title: t('trading.indiciesPage.cards.card5'),
             icon: "/indicies-icon5.webp"
         },
     ]
     return (
         <>
             <HeroBanner
-                title="Equity Indices"
-                para={` "Unlock a world of profitable opportunities trading cash indices with us, offering the tools and market access for a rewarding experience."`}
+                title={t('trading.indiciesPage.title')}
+                para={t('trading.indiciesPage.para')}
                 bannerImg={"/indicies-banner.webp"}
-                cardTitle="Our Trading Advantages"
+                cardTitle={t('common.cardTitle')}
                 bgImg={false}
                 cards={cardData}
             />

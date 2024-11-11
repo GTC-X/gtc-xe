@@ -1,4 +1,8 @@
+'use client'
 import React from "react";
+import parse from 'html-react-parser';
+import { useTranslation } from "react-i18next";
+
 
 const CardIcon = ({ title, img }) => {
     return (
@@ -10,8 +14,7 @@ const CardIcon = ({ title, img }) => {
             }
             <h3
                 className="text-left text-base leading-5 col-span-2"
-                dangerouslySetInnerHTML={{ __html: title }}
-            />
+            >{parse(title)}</h3>
         </div>
     );
 };
@@ -25,6 +28,7 @@ const TradeForexSection = ({
     bgImg = true,
     cards = [],
 }) => {
+    const { t } = useTranslation()
     return (
         <div className="container mx-auto">
             <section className="bg-black text-white pt-16 pb-10">
@@ -34,10 +38,9 @@ const TradeForexSection = ({
                         <h1 className="text-4xl font-bold">{title}</h1>
                         <p
                             className="text-base"
-                            dangerouslySetInnerHTML={{ __html: para }}
-                        />
+                        >{parse(para)}</p>
                         <button className="bg-secondary text-white py-1 px-10 rounded-lg font-medium hover:bg-secondary transition duration-300">
-                            Open Live Account
+                            {t("common.openLive")}
                         </button>
                     </div>
                     <div

@@ -1,37 +1,36 @@
+'use client'
+import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import EnergyTradingSection from "./components/energyInfo";
 
-export const metadata = {
-    title: '',
-    description: '',
-}
-
 export default function Energies() {
+    const { t } = useTranslation()
+
     const cardData = [
         {
-            title: `High Volatility - Greater Movement`,
+            title: t('trading.energiesPage.cards.card1'),
         },
         {
-            title: `Trade Oil - The Most Actively Traded Commodity Worldwide`,
+            title: t('trading.energiesPage.cards.card2'),
         },
         {
-            title: `Go Short / Long According to Market Moves`,
+            title: t('trading.energiesPage.cards.card3'),
         },
         {
-            title: `Trade on a Margin`,
+            title: t('trading.energiesPage.cards.card4'),
         },
         {
-            title: `No Overnight Financing on Oil CFDs`,
+            title: t('trading.energiesPage.cards.card5'),
         },
         {
-            title: `No Extra Fees Applicable`,
+            title: t('trading.energiesPage.cards.card6'),
         },
     ]
     return (
         <>
             <HeroBanner
-                title="TRADE ENERGY"
-                para={` "Experience a competitive advantage when trading energy markets with us"`}
+                title={t('trading.energiesPage.title')}
+                para={t('trading.energiesPage.para')}
                 bannerImg={"/energy-banner.webp"}
                 bgImg={false}
                 cards={cardData}

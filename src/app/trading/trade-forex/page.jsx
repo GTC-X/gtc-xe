@@ -1,50 +1,46 @@
+'use client'
+import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import ForexTradingInfo from "./components/tradingInfo";
 
-export const metadata = {
-    title: "",
-    description: "",
-};
-
 export default function TradeForex() {
+    const { t } = useTranslation()
+
     const cardData = [
         {
-            title: `Tightest Spread <br /> Starting from 0.0 Pips`,
+            title: t('trading.forexPage.cards.card1'),
             icon: "/trade-icon1.webp"
         },
         {
-            title: `Leverage <br /> Up to 1:2000`,
+            title: t('trading.forexPage.cards.card2'),
             icon: "/trade-icon2.webp"
         },
         {
-            title: `Instant and <br /> Fast Execution`,
+            title: t('trading.forexPage.cards.card3'),
             icon: "/trade-icon3.webp"
         },
         {
-            title: `Negative<br /> Balance Protection`,
+            title: t('trading.forexPage.cards.card4'),
             icon: "/trade-icon4.webp"
         },
         {
-            title: `No Trading<br /> Restrictions`,
+            title: t('trading.forexPage.cards.card5'),
             icon: "/trade-icon5.webp"
         },
         {
-            title: `No Requotes and<br /> Rejections`,
+            title: t('trading.forexPage.cards.card6'),
             icon: "/trade-icon6.webp"
         }
     ]
     return (
         <>
             <HeroBanner
-                title="TRADE FOREX"
-                para={`With a Tightest Spread Starting from 0 PIPS Offering Leverage upto 1:2000 & No restriction`}
+                title={t('trading.forexPage.title')}
+                para={t('trading.forexPage.para')}
                 bannerImg={"/forex-banner.webp"}
                 bgImg={true}
                 cards={cardData}
-                footer={`  Forex Trading Hours (Local = Server time zone, please note DST may
-                        apply)
-                        <br />
-                        Monday - Friday: 00:05 - 23:50`}
+                footer={t('trading.forexPage.footer')}
             />
             <div className=" bg-white">
                 <ForexTradingInfo />

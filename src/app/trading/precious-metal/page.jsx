@@ -1,48 +1,47 @@
+'use client'
+import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import MetalsTradingInfo from "./components/metalsInfo";
 
-export const metadata = {
-    title: '',
-    description: '',
-}
-
 export default function PreciousMetals() {
+    const { t } = useTranslation()
+
     const cardData = [
         {
-            title: `Tightest Spread on <b>Gold</b> <br /> Starting from 4 Cents`,
+            title: t('trading.metalPage.cards.card1'),
             icon: "/trade-icon1.webp"
         },
         {
-            title: `Leverage <br /> Up to 1000:1`,
+            title: t('trading.metalPage.cards.card2'),
             icon: "/trade-icon2.webp"
         },
         {
-            title: `Instant and <br /> Fast Execution`,
+            title: t('trading.metalPage.cards.card3'),
             icon: "/trade-icon3.webp"
         },
         {
-            title: `Negative<br /> Balance Protection`,
+            title: t('trading.metalPage.cards.card4'),
             icon: "/trade-icon4.webp"
         },
         {
-            title: `Trade <b>Gold</b> & <b>Silver</b><br /> with No Requotes`,
+            title: t('trading.metalPage.cards.card5'),
             icon: "/metal-icon5.webp"
         },
         {
-            title: `No Rejections`,
+            title: t('trading.metalPage.cards.card6'),
             icon: "/trade-icon6.webp"
         }
     ]
     return (
         <>
             <HeroBanner
-                title="PRECIOUS METALS"
-                para={`"MAXIMIZE YOUR PROFIT POTENTIAL WITH OUT ULTRA-COMPETITIVE <b class="text-[#b58756]">GOLD</b> SPREADS"`}
+                title={t('trading.metalPage.title')}
+                para={t('trading.metalPage.para')}
                 bannerImg={"/metals-banner.webp"}
-                cardTitle="Our Trading Advantages"
+                cardTitle={t('common.cardTitle')}
                 bgImg={false}
                 cards={cardData}
-                footer={`<b>Silver & Gold Trading Hours<br/>(GMT + 2 time zone, please note DST may apply)</b><br/>Monday - Thursday : 01:05 - 23:55 <br/>Friday : 01:35 - 23:50`}
+                footer={t('trading.metalPage.footer')}
             />
             <div className=" bg-white">
                 <MetalsTradingInfo />

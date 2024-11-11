@@ -1,28 +1,28 @@
+'use client'
+import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import StockCFDsSection from "./components/stockCFDSection";
 // import MetalsTradingInfo from "./components/metalsInfo";
 
-export const metadata = {
-    title: '',
-    description: '',
-}
 
 export default function StockCFD() {
+    const { t } = useTranslation()
+
     const cardData = [
         {
-            title: `TIGHTEST SPREADS`,
+            title: t('trading.stockPage.cards.card1'),
             icon: "/trade-icon1.webp"
         },
         {
-            title: `ZERO COMMISSION`,
+            title: t('trading.stockPage.cards.card2'),
             icon: "/stock-icon2.webp"
         },
         {
-            title: `LOWEST MARGIN <br /> ON ALL COMMODITIES`,
+            title: t('trading.stockPage.cards.card3'),
             icon: "/stock-icon3.webp"
         },
         {
-            title: `SWAP FREE`,
+            title: t('trading.stockPage.cards.card4'),
             icon: "/stock-icon4.webp"
         },
 
@@ -30,13 +30,13 @@ export default function StockCFD() {
     return (
         <>
             <HeroBanner
-                title="STOCK CFDs"
-                para={`"Our platform offers a <b>profitable edge,</b> enabling you to capitalize on both rising and falling stock prices during market volatility."`}
+                title={t('trading.stockPage.title')}
+                para={t('trading.stockPage.para')}
                 bannerImg={"/stock-banner.webp"}
-                cardTitle="Our Trading Advantages"
+                cardTitle={t('common.cardTitle')}
                 bgImg={false}
                 cards={cardData}
-                footer={`<b>Trading Hours<br/>(GMT + 2 time zone, please note DST may apply)</b><br/>Monday - Friday: 00:05 - 23:50`}
+                footer={t('trading.stockPage.footer')}
             />
             <div className=" bg-white">
                 <StockCFDsSection />
