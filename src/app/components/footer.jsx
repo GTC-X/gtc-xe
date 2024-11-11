@@ -11,6 +11,7 @@ import {
   FaTelegram,
 } from "react-icons/fa";
 import parse from 'html-react-parser';
+import SocialMedia from "./SocialMedia";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -24,71 +25,7 @@ const Footer = () => {
           <span className="font-medium">{t("footer.liveChat")}</span>
         </div>
 
-        <div className="flex justify-center gap-4">
-          <div className="p-1 rounded-full border border-white">
-            <a
-              href="#facebook"
-              aria-label="Facebook"
-              className="text-gray-400   hover:text-white"
-            >
-              <FaFacebookF />
-            </a>
-          </div>
-          <div className="p-1 rounded-full border border-white">
-            <a
-              href="#twitter"
-              aria-label="Twitter"
-              className="text-gray-400 hover:text-white"
-            >
-              <FaTwitter />
-            </a>
-          </div>
-          <div className="p-1 rounded-full border border-white">
-            <a
-              href="#linkedin"
-              aria-label="LinkedIn"
-              className="text-gray-400 hover:text-white"
-            >
-              <FaLinkedinIn />
-            </a>
-          </div>
-          <div className="p-1 rounded-full border border-white">
-            <a
-              href="#instagram"
-              aria-label="Instagram"
-              className="text-gray-400 hover:text-white"
-            >
-              <FaInstagram />
-            </a>
-          </div>
-          <div className="p-1 rounded-full border border-white">
-            <a
-              href="#youtube"
-              aria-label="YouTube"
-              className="text-gray-400 hover:text-white"
-            >
-              <FaYoutube />
-            </a>
-          </div>
-          <div className="p-1 rounded-full border border-white">
-            <a
-              href="#discord"
-              aria-label="Discord"
-              className="text-gray-400 hover:text-white"
-            >
-              <FaDiscord />
-            </a>
-          </div>
-          <div className="p-1 rounded-full border border-white">
-            <a
-              href="#telegram"
-              aria-label="Telegram"
-              className="text-gray-400 hover:text-white"
-            >
-              <FaTelegram />
-            </a>
-          </div>
-        </div>
+        <SocialMedia />
       </div>
       <div className="flex space-x-6 mb-6">
         <a href="#legal" className="hover:underline">
