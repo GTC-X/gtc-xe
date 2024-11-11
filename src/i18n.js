@@ -25,7 +25,7 @@ const getUserLanguage = () => {
 // Initialize i18n
 i18n.use(initReactI18next).init({
   resources,
-  lng: getUserLanguage(), // Set initial language from localStorage or default
+  lng: "en", // Set initial language from localStorage or default
   fallbackLng: "en",       // Default fallback
   interpolation: {
     escapeValue: false,

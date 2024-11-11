@@ -1,15 +1,7 @@
 'use client'
 import React from "react";
 import { useTranslation } from "react-i18next";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaInstagram,
-  FaYoutube,
-  FaDiscord,
-  FaTelegram,
-} from "react-icons/fa";
+ 
 import parse from 'html-react-parser';
 import SocialMedia from "./SocialMedia";
 

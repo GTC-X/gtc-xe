@@ -25,7 +25,7 @@ const socialMediaLinks = [
 
 const SocialMedia = () => {
   return (
-    <div className="flex justify-center space-x-2">
+    <div className="flex justify-center gap-2">
       {socialMediaLinks.map((social, index) => (
         <div key={index} className="p-1 rounded-full border border-white hover:bg-secondary">
           <Link
