@@ -44,8 +44,8 @@ const Header = () => {
         { name: t("HomePage.navBar.trading.energies"), href: "/trading/energies" },
       ],
     },
-    { name: t("HomePage.navBar.openAccount"), href: "/account", id: "account" },
-    { name: t("HomePage.navBar.platform"), href: "/platform", id: "platform" },
+    { name: t("HomePage.navBar.openAccount"), href: "/live-account-", id: "account" },
+    { name: t("HomePage.navBar.platform"), href: "/mt4-platform", id: "platform" },
   ];
   // Function to detect scroll
   useEffect(() => {
@@ -91,7 +91,7 @@ const Header = () => {
                 >
                   <Link
                     href={item.href || "#"}
-                    className={`text-base cursor-pointer flex items-center ${isActive ? "text-secondary" : "text-white"
+                     className={`text-base cursor-pointer flex items-center ${isActive ? "text-secondary" : "text-white"
                       }`}
                   >
                     <span>{item.name}</span>
