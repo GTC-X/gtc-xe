@@ -31,6 +31,7 @@ const Header = () => {
       subItems: [
         { name: t("HomePage.navBar.aboutUs.aboutEast"), href: "/about/about-us" },
         { name: t("HomePage.navBar.aboutUs.whyUs"), href: "/about/why-choose-us" },
+        { name: t("HomePage.navBar.aboutUs.contactUs"), href: "/about/contact-us" },
       ],
     },
     {
@@ -44,7 +45,7 @@ const Header = () => {
         { name: t("HomePage.navBar.trading.energies"), href: "/trading/energies" },
       ],
     },
-    { name: t("HomePage.navBar.openAccount"), href: "/live-account-", id: "account" },
+    { name: t("HomePage.navBar.openAccount"), href: "/live-account", id: "account" },
     { name: t("HomePage.navBar.platform"), href: "/mt4-platform", id: "platform" },
   ];
   // Function to detect scroll
@@ -91,7 +92,7 @@ const Header = () => {
                 >
                   <Link
                     href={item.href || "#"}
-                     className={`text-base cursor-pointer flex items-center ${isActive ? "text-secondary" : "text-white"
+                    className={`text-base cursor-pointer flex items-center ${isActive ? "text-secondary" : "text-white"
                       }`}
                   >
                     <span>{item.name}</span>

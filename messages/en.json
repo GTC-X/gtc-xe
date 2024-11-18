@@ -11,7 +11,7 @@
         "about": "About Us",
         "aboutEast": "About the East trade",
         "whyUs": "Why Us",
-        "contactUs": "Contact US"
+        "contactUs": "Contact Us"
       },
       "trading": {
         "trading": "Trading",
@@ -267,6 +267,12 @@
           "Instant and Fast Execution for optimal results"
         ]
       }
+    },
+    "contactUs": {
+      "title": "Contact Us",
+      "para1":"Your satisfaction is our top priority. We are dedicated to ensuring that you have a seamless and rewarding experience with our services.",
+      "para2":"Our team is committed to going above and beyond to meet your needs. Whether it's addressing your concerns, assisting you with technical issues, or providing expert guidance, we are here to serve you. Your success and contentment are at the heart of our mission, and we're always ready to assist you in any way we can.",
+      "formTitle":"We'd Love to Hear From You"
     }
   },
   "trading": {
