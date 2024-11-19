@@ -18,7 +18,7 @@ const PageContactUs = React.memo(() => {
                         <iframe
                             src="https://demo-registration-26be-ebc266552f8e.herokuapp.com/forms/frame" // or remove `language` if not needed
                             title="Registration Form"
-                            sandbox="allow-scripts allow-same-origin"
+                            sandbox="allow-scripts allow-same-origin allow-forms"
                             style={{
                                 width: '100%',
                                 height: '100%',
