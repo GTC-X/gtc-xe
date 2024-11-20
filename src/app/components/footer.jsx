@@ -37,8 +37,6 @@ const Footer = () => {
         >{parse(t("footer.desc1"))}</p>
         <p className="mb-4"
         >{parse(t("footer.desc2"))}</p>
-        <p
-        >{parse(t("footer.desc3"))}</p>
       </div>
     </footer>
   );
