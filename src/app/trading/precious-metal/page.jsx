@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import MetalsTradingInfo from "./components/metalsInfo";
+import MetaData from "@/app/components/metaData";
 
 export default function PreciousMetals() {
     const { t } = useTranslation()
@@ -34,6 +35,7 @@ export default function PreciousMetals() {
     ]
     return (
         <>
+            <MetaData title={t("trading.metalPage.metaData.title")} description={t("trading.metalPage.metaData.desc")} />
             <HeroBanner
                 title={t('trading.metalPage.title')}
                 para={t('trading.metalPage.para')}

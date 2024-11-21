@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import StockCFDsSection from "./components/stockCFDSection";
+import MetaData from "@/app/components/metaData";
 // import MetalsTradingInfo from "./components/metalsInfo";
 
 
@@ -29,6 +30,8 @@ export default function StockCFD() {
     ]
     return (
         <>
+            <MetaData title={t("trading.stockPage.metaData.title")} description={t("trading.stockPage.metaData.desc")} />
+
             <HeroBanner
                 title={t('trading.stockPage.title')}
                 para={t('trading.stockPage.para')}

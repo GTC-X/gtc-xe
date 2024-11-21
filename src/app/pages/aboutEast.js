@@ -1,14 +1,18 @@
 'use client'
 import MetaData from '@/app/components/metaData';
+import Head from 'next/head';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 const AboutUs = () => {
-    const { t } = useTranslation();
+    const { t } = useTranslation()
     return (
         <>
-            <MetaData title={t("aboutUs.aboutEast.metaData.title")} description={t("aboutUs.aboutEast.metaData.desc")} />
-            <div className=' bg-white'>
+            <Head>
+                <title>About Us - The East Trading Co.</title>
+                <meta name="description" content="Learn more about The East Trading Co., our expertise, reliability, and innovative solutions." />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            </Head>            <div className=' bg-white'>
                 <div className="container mx-auto">
                     {/* Logo and Header */}
                     <div className=' grid md:grid-cols-2 grid-cols-1 min-h-96 items-center gap-2'>

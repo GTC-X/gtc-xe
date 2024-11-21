@@ -1,6 +1,10 @@
 {
   "HomePage": {
     "title": "Hello world!",
+    "metaData": {
+      "title": "The East Trading Company | Maximize Your Forex Trading Potential",
+      "desc": "Invest with the World's Leading Online Trading Platform. Our MetaTrader platform ensures stable performance and competitive spreads, giving you the advantage you need to make the most of every trade."
+    },
     "topBar": {
       "memberLogin": "Member login",
       "openAccount": "OPEN AN ACCOUNT"
@@ -216,13 +220,17 @@
   },
   "aboutUs": {
     "aboutEast": {
+      "metaData": {
+        "title": "About Us",
+        "desc": "Discover The East Trade – Your Global Financial Partner"
+      },
       "heading": "About Us",
       "desc": "Discover The East Trade – Your Global Financial Partner",
       "subHeading": "EXPERTISE  |  RELIABILITY  |  INNOVATION",
       "section1": {
         "heading": "EXPERTISE",
-        "para1":"As a trusted financial broker working alongside GTCFX,The East Trade brings over a decade of expertise to the table. We have established a strong reputation for excellence by delivering premium financial services that empower traders to succeed in the global markets.",
-         "para2": "Our broad portfolio of products and services highlights our financial strength and commitment to providing world-class support to a growing client base of more than 180,000 customers worldwide. We take pride in serving partners and clients across over 25 countries."
+        "para1": "As a trusted financial broker working alongside GTCFX,The East Trade brings over a decade of expertise to the table. We have established a strong reputation for excellence by delivering premium financial services that empower traders to succeed in the global markets.",
+        "para2": "Our broad portfolio of products and services highlights our financial strength and commitment to providing world-class support to a growing client base of more than 180,000 customers worldwide. We take pride in serving partners and clients across over 25 countries."
       },
       "section2": {
         "heading": "RELIABILITY",
@@ -234,6 +242,10 @@
       }
     },
     "whyUs": {
+      "metaData": {
+        "title": "Why Choose The East Trade?",
+        "desc": "Unlock Profitable Opportunities: Start Your Best Investment Journey with Us"
+      },
       "section1": {
         "title": "Why Choose The East Trade?",
         "subTitle": "<span class=\" font-medium\">Unlock Profitable Opportunities: </span> Start Your Best Investment Journey with Us",
@@ -269,14 +281,22 @@
       }
     },
     "contactUs": {
+      "metaData": {
+        "title": "Contact Us",
+        "desc": "Your satisfaction is our top priority. We are dedicated to ensuring that you have a seamless and rewarding experience with our services."
+      },
       "title": "Contact Us",
-      "para1":"Your satisfaction is our top priority. We are dedicated to ensuring that you have a seamless and rewarding experience with our services.",
-      "para2":"Our team is committed to going above and beyond to meet your needs. Whether it's addressing your concerns, assisting you with technical issues, or providing expert guidance, we are here to serve you. Your success and contentment are at the heart of our mission, and we're always ready to assist you in any way we can.",
-      "formTitle":"We'd Love to Hear From You"
+      "para1": "Your satisfaction is our top priority. We are dedicated to ensuring that you have a seamless and rewarding experience with our services.",
+      "para2": "Our team is committed to going above and beyond to meet your needs. Whether it's addressing your concerns, assisting you with technical issues, or providing expert guidance, we are here to serve you. Your success and contentment are at the heart of our mission, and we're always ready to assist you in any way we can.",
+      "formTitle": "We'd Love to Hear From You"
     }
   },
   "trading": {
     "forexPage": {
+      "metaData": {
+        "title": "TRADE FOREX",
+        "desc": "With a Tightest Spread Starting from 0 PIPS Offering Leverage upto 1:2000 & No restriction"
+      },
       "title": "TRADE FOREX",
       "para": "With a Tightest Spread Starting from 0 PIPS Offering Leverage upto 1:2000 & No restriction",
       "footer": "Forex Trading Hours (Local = Server time zone, please note DST may apply) <br /> Monday - Friday: 00:05 - 23:50",
@@ -307,6 +327,10 @@
       }
     },
     "metalPage": {
+      "metaData": {
+        "title": "PRECIOUS METALS",
+        "desc": "MAXIMIZE YOUR PROFIT POTENTIAL WITH OUT ULTRA-COMPETITIVE GOLD SPREADS"
+      },
       "title": "PRECIOUS METALS",
       "para": "\"MAXIMIZE YOUR PROFIT POTENTIAL WITH OUT ULTRA-COMPETITIVE <b class=\"text-[#b58756]\">GOLD</b> SPREADS\"",
       "footer": "<b>Silver & Gold Trading Hours<br/>(GMT + 2 time zone, please note DST may apply)</b><br/>Monday - Thursday : 01:05 - 23:55 <br/>Friday : 01:35 - 23:50",
@@ -332,6 +356,10 @@
       }
     },
     "stockPage": {
+      "metaData": {
+        "title": "STOCK CFDs",
+        "desc": "Our platform offers a profitable edge, enabling you to capitalize on both rising and falling stock prices during market volatility."
+      },
       "title": "STOCK CFDs",
       "para": "\"Our platform offers a <b>profitable edge,</b> enabling you to capitalize on both rising and falling stock prices during market volatility.\"",
       "footer": "<b>Trading Hours<br/>(GMT + 2 time zone, please note DST may apply)</b><br/>Monday - Friday: 00:05 - 23:50",
@@ -360,6 +388,10 @@
       }
     },
     "indiciesPage": {
+      "metaData": {
+        "title": "Equity Indices",
+        "desc": "Unlock a world of profitable opportunities trading cash indices with us, offering the tools and market access for a rewarding experience."
+      },
       "title": "Equity Indices",
       "para": "\"Unlock a world of profitable opportunities trading cash indices with us, offering the tools and market access for a rewarding experience.\"",
       "cards": {
@@ -382,6 +414,10 @@
       }
     },
     "energiesPage": {
+      "metaData": {
+        "title": "TRADE ENERGY",
+        "desc": "Experience a competitive advantage when trading energy markets with us"
+      },
       "title": "TRADE ENERGY",
       "para": "\"Experience a competitive advantage when trading energy markets with us\"",
       "cards": {
@@ -403,6 +439,12 @@
           "para4": "ACCESS TO REAL-TIME MARKET DATA, IN-DEPTH ANALYSIS, AND A WIDE RANGE OF TRADING  TOOLS EQUIPS TRADERS WITH THE INSIGHTS NEEDED TO MAKE WELL-INFORMED DECISIONS  AND TAKE ADVANTAGE OF EMERGING OPPORTUNITIES IN ENERGY MARKETS."
         }
       }
+    }
+  },
+  "mt4Page": {
+    "metaData": {
+      "title": "MT4 / MT5",
+      "desc": "Powerful Trading Platforms"
     }
   },
   "common": {

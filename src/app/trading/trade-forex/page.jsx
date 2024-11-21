@@ -2,10 +2,10 @@
 import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import ForexTradingInfo from "./components/tradingInfo";
+import MetaData from "@/app/components/metaData";
 
 export default function TradeForex() {
     const { t } = useTranslation()
-
     const cardData = [
         {
             title: t('trading.forexPage.cards.card1'),
@@ -34,6 +34,7 @@ export default function TradeForex() {
     ]
     return (
         <>
+            <MetaData title={t("trading.forexPage.metaData.title")} description={t("trading.forexPage.metaData.desc")} />
             <HeroBanner
                 title={t('trading.forexPage.title')}
                 para={t('trading.forexPage.para')}

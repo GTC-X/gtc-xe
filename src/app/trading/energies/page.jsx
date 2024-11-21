@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import EnergyTradingSection from "./components/energyInfo";
+import MetaData from "@/app/components/metaData";
 
 export default function Energies() {
     const { t } = useTranslation()
@@ -28,6 +29,7 @@ export default function Energies() {
     ]
     return (
         <>
+            <MetaData title={t("trading.energiesPage.metaData.title")} description={t("trading.energiesPage.metaData.desc")} />
             <HeroBanner
                 title={t('trading.energiesPage.title')}
                 para={t('trading.energiesPage.para')}

@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import HeroBanner from "../commonComponents/banner";
 import EquityIndicesInfo from "./components/indiciesInfo";
+import MetaData from "@/app/components/metaData";
 
 export default function EquityIndicies() {
     const { t } = useTranslation()
@@ -30,6 +31,7 @@ export default function EquityIndicies() {
     ]
     return (
         <>
+            <MetaData title={t("trading.indiciesPage.metaData.title")} description={t("trading.indiciesPage.metaData.desc")} />
             <HeroBanner
                 title={t('trading.indiciesPage.title')}
                 para={t('trading.indiciesPage.para')}
