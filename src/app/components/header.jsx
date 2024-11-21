@@ -45,7 +45,13 @@ const Header = () => {
         { name: t("HomePage.navBar.trading.energies"), href: "/trading/energies" },
       ],
     },
-    { name: t("HomePage.navBar.openAccount"), href: "/live-account", id: "account" },
+    {
+      name: t("HomePage.navBar.openAccount"), id: "account",
+      subItems: [
+        { name: "Standard LO", href: "https://mygtcportal.com/getview?view=register&token=e4biowwwAowwwwww?lang=en-US" },
+        { name: "ECN", href: "https://mygtcportal.com/getview?view=register&token=e4biowwwsowwwwww?lang=en-US" },
+      ],
+    },
     { name: t("HomePage.navBar.platform"), href: "/mt4-platform", id: "platform" },
   ];
   // Function to detect scroll
@@ -112,8 +118,13 @@ const Header = () => {
                           <div
                             key={subItem.href}
                             onClick={() => {
-                              router.push(subItem.href);
-                              setShowDropdown(null); // Hide dropdown on selection
+                              if (item?.id == "account") {
+                                window.open(subItem?.href, "_blank")
+                                setShowDropdown(null); // Hide dropdown on selection
+                              } else {
+                                router.push(subItem.href);
+                                setShowDropdown(null); // Hide dropdown on selection
+                              }
                             }}
                             className={`block cursor-pointer px-4 whitespace-pre py-2 ${pathname === subItem.href ? "text-secondary" : "text-primary"
                               } hover:bg-gray-100`}
