@@ -48,8 +48,8 @@ const Header = () => {
     {
       name: t("HomePage.navBar.openAccount"), id: "account",
       subItems: [
-        { name: "Standard LO", href: "https://mygtcportal.com/getview?view=register&token=e4biowwwAowwwwww?lang=en-US" },
-        { name: "ECN", href: "https://mygtcportal.com/getview?view=register&token=e4biowwwsowwwwww?lang=en-US" },
+        { name: "with Standard LO", href: "https://mygtcportal.com/getview?view=register&token=e4biowwwAowwwwww" },
+        { name: "with ECN", href: "https://mygtcportal.com/getview?view=register&token=e4biowwwsowwwwww" },
       ],
     },
     { name: t("HomePage.navBar.platform"), href: "/mt4-platform", id: "platform" },
@@ -113,7 +113,7 @@ const Header = () => {
                   {/* Dropdown Menu */}
                   {item.subItems && showDropdown === item.id && (
                     <div className="absolute left-0 pt-2 z-50">
-                      <div className="bg-white shadow-lg  rounded-md p-2 ">
+                      <div className="bg-white shadow-lg  rounded-md">
                         {item.subItems.map((subItem) => (
                           <div
                             key={subItem.href}
@@ -127,7 +127,7 @@ const Header = () => {
                               }
                             }}
                             className={`block cursor-pointer px-4 whitespace-pre py-2 ${pathname === subItem.href ? "text-secondary" : "text-primary"
-                              } hover:bg-gray-100`}
+                              } hover:bg-secondary hover:text-white`}
                           >
                             {subItem.name}
                           </div>
