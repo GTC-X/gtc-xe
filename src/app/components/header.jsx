@@ -178,7 +178,7 @@ const Header = () => {
                       <div key={item.id}>
                         {item.subItems ? (
                           <details className="group">
-                            <summary className="block py-2 text-base font-semibold leading-7 text-white cursor-pointer flex items-center ">
+                            <summary className="py-2 text-base font-semibold leading-7 text-white cursor-pointer flex items-center ">
                               <span>{item.name}</span>
                               <FaChevronDown className="text-white text-sm mx-3 group-open:rotate-180 transition-transform" />
                             </summary>
