@@ -37,9 +37,7 @@ const AboutUs = () => {
                         <p className="mt-4   ">
                             {t("aboutUs.aboutEast.section1.para1")}
                         </p>
-                        <p className="mt-2   ">
-                            {t("aboutUs.aboutEast.section1.para2")}
-                        </p>
+                  
                     </div>
 
                     {/* Reliability Section */}
