@@ -18,7 +18,7 @@ const socialMediaLinks = [
     icon: <FaFacebookF size={18} className="text-secondary" />,
     bg: "bg-secondary",
     label: "Facebook",
-    link: "https://www.facebook.com/EastFX.Ly?locale=ar_AR",
+    link: "https://www.facebook.com/share/1CWgqbhdkd/?mibextid=kFxxJD",
   },
   {
     icon: <FaSnapchat size={18} className="text-secondary" />,
