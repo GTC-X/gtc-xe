@@ -75,10 +75,10 @@ const Header = () => {
     >
       <TopBar />
       <div className="pb-2 bg-primary">
-        <div className="container flex gap-2 flex-row items-center justify-between py-3">
+        <div className="container flex gap-2 flex-row items-center justify-between py-0">
           {/* Logo */}
           <Link href="/">
-            <img className="h-8 md:h-12" src="/logo-new.png" alt="Logo" />
+            <img className="h-8 md:h-28" src="/new-logo.webp" alt="Logo" />
           </Link>
 
           {/* Desktop Navigation */}
