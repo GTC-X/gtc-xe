@@ -75,14 +75,14 @@ const Header = () => {
     >
       <TopBar />
       <div className="pb-2 bg-primary">
-        <div className="container flex gap-2 flex-row items-center justify-between py-2 md:py-0">
+        <div className="container flex flex-row items-center justify-between gap-2 py-2 md:py-0">
           {/* Logo */}
           <Link href="/">
-            <img className="h-16 md:h-28" src="/new-logo.webp" alt="Logo" />
+            <img className="h-28 md:h-28" src="/Logo-Recovered.png" alt="Logo" />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-x-6 items-center" ref={ref}>
+          <div className="items-center hidden md:flex gap-x-6" ref={ref}>
             {navigation.map((item) => {
               const isActive =
                 pathname === item.href ||
@@ -111,8 +111,8 @@ const Header = () => {
 
                   {/* Dropdown Menu */}
                   {item.subItems && showDropdown === item.id && (
-                    <div className="absolute left-0 pt-2 z-50">
-                      <div className="bg-white shadow-lg  rounded-md">
+                    <div className="absolute left-0 z-50 pt-2">
+                      <div className="bg-white rounded-md shadow-lg">
                         {item.subItems.map((subItem) => (
                           <div
                             key={subItem.href}
@@ -140,7 +140,7 @@ const Header = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex gap-6">
+          <div className="flex gap-6 md:hidden">
             <LanguageMobile />
             <button
               type="button"
@@ -148,7 +148,7 @@ const Header = () => {
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
             >
               <span className="sr-only">Open main menu</span>
-              <FaBarsStaggered aria-hidden="true" className="h-6 w-6" />
+              <FaBarsStaggered aria-hidden="true" className="w-6 h-6" />
             </button>
           </div>
 
@@ -166,20 +166,20 @@ const Header = () => {
                   className="-m-2.5 rounded-md p-2.5 text-gray-700"
                 >
                   <span className="sr-only">Close menu</span>
-                  <IoClose aria-hidden="true" className="h-6 w-6 text-white" />
+                  <IoClose aria-hidden="true" className="w-6 h-6 text-white" />
                 </button>
               </div>
 
-              <div className="mt-6 flow-root">
+              <div className="flow-root mt-6">
                 <div className="-my-6 divide-y divide-gray-500/10">
-                  <div className="space-y-2 py-6">
+                  <div className="py-6 space-y-2">
                     {navigation.map((item) => (
                       <div key={item.id}>
                         {item.subItems ? (
                           <details className="group">
-                            <summary className="py-2 text-base font-semibold leading-7 text-white cursor-pointer flex items-center ">
+                            <summary className="flex items-center py-2 text-base font-semibold leading-7 text-white cursor-pointer ">
                               <span>{item.name}</span>
-                              <FaChevronDown className="text-white text-sm mx-3 group-open:rotate-180 transition-transform" />
+                              <FaChevronDown className="mx-3 text-sm text-white transition-transform group-open:rotate-180" />
                             </summary>
                             <div className="pl-6 space-y-2">
                               {item.subItems.map((subItem) => (
@@ -209,7 +209,7 @@ const Header = () => {
                     ))}
                   </div>
                   <div className="py-6">
-                    <Link href="#" className="bg-gradient rounded-full py-3 px-5 text-white w-96">
+                    <Link href="#" className="px-5 py-3 text-white rounded-full bg-gradient w-96">
                       Contact Us
                     </Link>
                   </div>

@@ -24,43 +24,43 @@ const Service = () => {
         {
             title: t("HomePage.investSection.card1"),
             id: 1,
-            icon: <FaHeadset className="text-secondary text-3xl mb-4" />,
+            icon: <FaHeadset className="mb-4 text-3xl text-secondary" />,
         },
         {
             title: t("HomePage.investSection.card2"),
             id: 2,
-            icon: <FaCogs className="text-secondary text-3xl mb-4" />,
+            icon: <FaCogs className="mb-4 text-3xl text-secondary" />,
         },
         {
             title: t("HomePage.investSection.card3"),
             id: 3,
-            icon: <FaGlobe className="text-secondary text-3xl mb-4" />,
+            icon: <FaGlobe className="mb-4 text-3xl text-secondary" />,
         },
         {
             title: t("HomePage.investSection.card4"),
             id: 4,
-            icon: <FaShieldAlt className="text-secondary text-3xl mb-4" />,
+            icon: <FaShieldAlt className="mb-4 text-3xl text-secondary" />,
         },
         {
             title: t("HomePage.investSection.card5"),
             id: 5,
-            icon: <FaClock className="text-secondary text-3xl mb-4" />,
+            icon: <FaClock className="mb-4 text-3xl text-secondary" />,
         },
     ];
     return (
         <div className="container pt-10 md:pt-12 2xl:pt-16">
-            <div className=" text-center">
+            <div className="text-center ">
                 {/* Title and Description */}
-                <h2 className="text-xl md:text-3xl font-medium text-secondary mb-4">
+                <h2 className="mb-4 text-xl font-medium md:text-3xl text-secondary">
                     {t("HomePage.investSection.title")}
                 </h2>
-                <p className="text-lg  mx-auto max-w-5xl">
+                <p className="max-w-5xl mx-auto text-lg">
                     {t("HomePage.investSection.para")}
 
                 </p>
 
                 {/* Features */}
-                <div className="mt-10 grid grid-cols-2 md:grid-cols-5 md:-6 gap-2">
+                <div className="grid grid-cols-2 gap-2 mt-10 md:grid-cols-5 md:-6">
                     {cards?.map((single, index) => (
                         <Card key={single?.id} title={single?.title} icon={single?.icon} isLast={cards?.length - 1 == index} />
                     ))}

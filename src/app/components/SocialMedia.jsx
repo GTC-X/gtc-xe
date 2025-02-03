@@ -12,6 +12,7 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { RiGlobalLine } from "react-icons/ri";
 import Link from "next/link";
+import { FaTiktok } from "react-icons/fa6";
 
 const socialMediaLinks = [
   {
@@ -19,6 +20,12 @@ const socialMediaLinks = [
     bg: "bg-secondary",
     label: "Facebook",
     link: "https://www.facebook.com/share/1CWgqbhdkd/?mibextid=kFxxJD",
+  },
+  {
+    icon: <FaTiktok size={18} className="text-secondary" />,
+    bg: "bg-secondary",
+    label: "TikTok",
+    link: "https://www.tiktok.com/@eastfx.ly?_t=ZS-8tYVXDXI6UM&_r=1",
   },
   {
     icon: <FaSnapchat size={18} className="text-secondary" />,
