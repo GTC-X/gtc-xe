@@ -30,6 +30,7 @@ const Header = () => {
       id: "about",
       subItems: [
         { name: t("HomePage.navBar.aboutUs.aboutEast"), href: "/about/about-us" },
+        { name: t("HomePage.navBar.aboutUs.termsAndConditions"), href: "/about/terms" },
         { name: t("HomePage.navBar.aboutUs.whyUs"), href: "/about/why-choose-us" },
         { name: t("HomePage.navBar.aboutUs.contactUs"), href: "/about/contact-us" },
       ],

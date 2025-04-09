@@ -5,6 +5,7 @@ import { NextUIProvider } from "@nextui-org/react";
 import i18n from "../i18n"; // Import your i18n configuration
 import Header from "./components/header";
 import Footer from "./components/footer";
+import TermsToast from "./components/home/TermsToast";
 
 const ClientLayout = ({ children }) => {
     const [direction, setDirection] = useState("ltr");
@@ -29,6 +30,7 @@ const ClientLayout = ({ children }) => {
             <body>
                 <NextUIProvider>
                     <Header />
+                    <TermsToast />
                     <div className="pt-16 md:pt-28">{children}</div>
                     <Footer />
                 </NextUIProvider>

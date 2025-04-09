@@ -14,6 +14,7 @@
       "aboutUs": {
         "about": "About Us",
         "aboutEast": "About the East trade",
+        "termsAndConditions": "Terms and Conditions",
         "whyUs": "Why Us",
         "contactUs": "Contact Us"
       },
@@ -290,6 +291,41 @@
       "para2": "Our team is committed to going above and beyond to meet your needs. Whether it's addressing your concerns, assisting you with technical issues, or providing expert guidance, we are here to serve you. Your success and contentment are at the heart of our mission, and we're always ready to assist you in any way we can.",
       "formTitle": "We'd Love to Hear From You"
     }
+  },
+  "termsAndConditions": {
+    "metaData": {
+      "title": "Terms and Conditions | Al Sharq Company",
+      "desc": "Read our terms and conditions to understand the limits of our liability regarding recommendations, trades, and account management."
+    },
+    "heading": "Terms and Conditions",
+    "desc": "Please read this statement carefully before using any of our services or relying on any information provided by us or third parties.",
+    "subHeading": "Al Sharq Company Disclaimer",
+    "section1": {
+      "heading": "Disclaimer",
+      "para1": "We, Al Sharq Company, issue this statement to clarify the limits of our liability regarding recommendations, trades, and account management. Please read this statement carefully before using any of our services or relying on any information provided by us or third parties."
+    },
+    "section2": {
+      "heading": "Disclaimer for Recommendations",
+      "para1": "We will not be liable in any way for any recommendations or information provided via Telegram pages or channels or any other platforms. All trades or recommendations provided may be correct or incorrect, and trade data may change at the last minute due to fluctuations in the global stock or forex market."
+    },
+    "section3": {
+      "heading": "Account Management",
+      "para1": "We do not provide or manage any services related to client account management. If a client engages a third party to manage their personal account, whether through personal knowledge or any other means, this responsibility falls entirely on the client."
+    },
+    "section4": {
+      "heading": "Client Responsibility",
+      "para1": "The client bears full responsibility for any decisions they make based on recommendations or information from third-party sources. We will not bear any legal or financial liability for any losses or damages that may result from such transactions."
+    },
+    "section5": {
+      "heading": "Market Fluctuations",
+      "para1": "We assume no liability for any losses resulting from fluctuations in financial markets, including the stock market or the forex market. All trading decisions are the sole responsibility of the client."
+    }
+  },
+  "termsToast": {
+    "title": "Terms and Conditions",
+    "message": "Please read our terms and conditions before continuing to use our website. By continuing to use this site, you agree to our terms and conditions.",
+    "readTerms": "Read Terms",
+    "accept": "I Accept"
   },
   "trading": {
     "forexPage": {
