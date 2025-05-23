@@ -37,7 +37,7 @@ const socialMediaLinks = [
     icon: <FaWhatsapp size={18} className="text-secondary" />,
     bg: "bg-secondary",
     label: "WhatsApp",
-    link: "https://wa.me/message/NR6BJPSHIMA6F1",
+    link: "https://wa.me/218941730700",
   },
   {
     icon: <HiOutlineMail size={18} className="text-secondary" />,
