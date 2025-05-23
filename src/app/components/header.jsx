@@ -49,7 +49,7 @@ const Header = () => {
     {
       name: t("HomePage.navBar.openAccount"), id: "account",
       subItems: [
-        { name: "with Standard L10", href: "https://mygtcportal.com/getview?view=register&token=8ledowww8lowwwww" },
+        { name: "with Standard", href: "https://mygtcportal.com/getview?view=register&token=8ledowww8lowwwww" },
        ],
     },
     { name: t("HomePage.navBar.platform"), href: "/mt4-platform", id: "platform" },
